@@ -11,7 +11,7 @@
 
 #import "glk.h"
 
-NSString* GlkImageAttributeName = @"GlkImageAttribute";
+NSString* const GlkImageAttributeName = @"GlkImageAttribute";
 
 @implementation GlkImage
 
@@ -100,7 +100,6 @@ NSString* GlkImageAttributeName = @"GlkImageAttribute";
 
         // Invalidate...
         [layout invalidateLayoutForCharacterRange: ourLine
-                                           isSoft: YES
                              actualCharacterRange: nil];
 
         // Done

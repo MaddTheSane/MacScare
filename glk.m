@@ -17,6 +17,7 @@
 #import "glkInternal.h"
 #import "GlkSession.h"
 #import "GlkStatus.h"
+#import "GlkWindowView.h"
 
 #import "GlkWriteBufferedStream.h"
 
@@ -333,7 +334,7 @@ strid_t glk_stream_open_file(frefid_t fileref, glui32 fmode,
 //		2004-03-13	witness	Created.
 // -----------------------------------------------------------------------------
 
-strid_t glkunix_stream_open_pathname(char *pathname, glui32 textmode, glui32 rock)
+strid_t glkunix_stream_open_pathname(const char *pathname, glui32 textmode, glui32 rock)
 {
 #ifdef GLKLOG
     NSLog(@"glkunix_stream_open_pathname()");
@@ -341,7 +342,7 @@ strid_t glkunix_stream_open_pathname(char *pathname, glui32 textmode, glui32 roc
 	
 	// TODO: Should we enforce that this is only available during glkunix_startup_code()?
 	
-    GlkStream* newStr = [ourSession openFileWithForcedName: [NSString stringWithCString: pathname]
+    GlkStream* newStr = [ourSession openFileWithForcedName: [NSFileManager.defaultManager stringWithFileSystemRepresentation:pathname length:strlen(pathname)]
 							usage: (textmode? fileusage_TextMode : fileusage_BinaryMode)
 							withMode: filemode_Read rock: rock];
 
@@ -448,7 +449,7 @@ void glk_put_string(char *s) {
     printf("%s", s);
 #endif
 
-    [cStream putString: [NSString stringWithCString: s]];
+    [cStream putString: [NSString stringWithCString: s encoding: NSUTF8StringEncoding]];
 }
 
 void glk_put_string_stream(strid_t str, char *s) {
@@ -457,7 +458,7 @@ void glk_put_string_stream(strid_t str, char *s) {
 #endif
 
     // [ourSession threadPoolFree];
-    [glkstr(str) putString: [NSString stringWithCString: s]];
+    [glkstr(str) putString: [NSString stringWithCString: s encoding: NSUTF8StringEncoding]];
 }
 
 void glk_put_buffer(char *buf, glui32 len) {
@@ -515,7 +516,7 @@ glui32 glk_get_line_stream(strid_t str, char *buf, glui32 len) {
 
     if (line != nil) {
         memcpy(buf, [line bytes], [line length]);
-        return [line length];
+        return (glui32)[line length];
     }
 
     return 0;
@@ -531,7 +532,7 @@ glui32 glk_get_buffer_stream(strid_t str, char *buf, glui32 len) {
 
     if (line != nil) {
         memcpy(buf, [line bytes], [line length]);
-        return [line length];
+        return (int)[line length];
     }
 
     return 0;
@@ -722,10 +723,12 @@ void glk_request_line_event(winid_t cwin, char *buf, glui32 maxlen,
     [ourSession threadPoolFree];
     cwin->outBuf = buf;
     cwin->bufLen = maxlen;
-    
+	
+	NSData *nsBuf = [NSData dataWithBytes:buf length:initlen];
+	NSString *strBuf = [[NSString alloc] initWithData:nsBuf encoding:NSUTF8StringEncoding];
     [glkwin(cwin) requestLineEvent: maxlen
-                              init: [NSString stringWithCString: buf
-                                                         length: initlen]];
+                              init: strBuf];
+	[strBuf release];
 }
 
 void glk_request_char_event(winid_t cwin) {
@@ -813,7 +816,9 @@ glui32 glk_image_draw_scaled(winid_t cwin, glui32 image,
                                  val2: val2
                             withWidth: width
                                height: height];
+		return 1;
     }
+	return 0;
 }
 
 glui32 glk_image_get_info(glui32 image, glui32 *width, glui32 *height) {
@@ -861,6 +866,7 @@ void glk_window_set_background_color(winid_t cwin, glui32 color)  {
 
 schanid_t glk_schannel_create(glui32 rock) {
     NSLog(@"Function glk_schannel_create not implemented");
+	return NULL;
 }
 
 void glk_schannel_destroy(schanid_t chan) {
@@ -874,15 +880,18 @@ schanid_t glk_schannel_iterate(schanid_t chan, glui32 *rockptr) {
 
 glui32 glk_schannel_get_rock(schanid_t chan) {
     NSLog(@"Function glk_schannel_get_rock not implemented");
+	return UINT32_MAX;
 }
 
 glui32 glk_schannel_play(schanid_t chan, glui32 snd) {
     NSLog(@"Function glk_schannel_play not implemented");
+	return UINT32_MAX;
 }
 
 glui32 glk_schannel_play_ext(schanid_t chan, glui32 snd, glui32 repeats,
                                     glui32 notify) {
     NSLog(@"Function glk_schannel_play_ext not implemented");
+	return UINT32_MAX;
 }
 
 void glk_schannel_stop(schanid_t chan) {

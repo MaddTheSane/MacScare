@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,25 +30,12 @@
 		3DEC1218089ED4A100C32BA6 /* GlkGraphicsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB67C50049F778E00A8E303 /* GlkGraphicsView.h */; };
 		3DEC1219089ED4A100C32BA6 /* GlkImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B40A2C304A09B9E00A8E303 /* GlkImage.h */; };
 		3DEC121A089ED4A100C32BA6 /* GlkTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3B960304A370AD00A8E303 /* GlkTextContainer.h */; };
-		3DEC121B089ED4A100C32BA6 /* inftrees.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F5605FF0DE8007FC823 /* inftrees.h */; };
-		3DEC121C089ED4A100C32BA6 /* inffast.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F5D05FF0DE8007FC823 /* inffast.h */; };
-		3DEC121D089ED4A100C32BA6 /* inflate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F5E05FF0DE8007FC823 /* inflate.h */; };
 		3DEC121E089ED4A100C32BA6 /* scprotos.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F6205FF0DE8007FC823 /* scprotos.h */; };
-		3DEC121F089ED4A100C32BA6 /* trees.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F6405FF0DE8007FC823 /* trees.h */; };
-		3DEC1220089ED4A100C32BA6 /* zconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F6705FF0DE8007FC823 /* zconf.h */; };
-		3DEC1221089ED4A100C32BA6 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F6905FF0DE8007FC823 /* zutil.h */; };
 		3DEC1222089ED4A100C32BA6 /* scgamest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F6E05FF0DE8007FC823 /* scgamest.h */; };
-		3DEC1223089ED4A100C32BA6 /* deflate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F6F05FF0DE8007FC823 /* deflate.h */; };
-		3DEC1224089ED4A100C32BA6 /* crc32.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F7805FF0DE8007FC823 /* crc32.h */; };
-		3DEC1225089ED4A100C32BA6 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F7B05FF0DE8007FC823 /* zlib.h */; };
-		3DEC1226089ED4A100C32BA6 /* inffixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F7D05FF0DE8007FC823 /* inffixed.h */; };
 		3DEC1227089ED4A100C32BA6 /* scare.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7B8F7E05FF0DE8007FC823 /* scare.h */; };
 		3DEC1228089ED4A100C32BA6 /* NSBundle+Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF75D320602FFF90056AA39 /* NSBundle+Types.h */; };
-		3DEC122A089ED4A100C32BA6 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		3DEC122B089ED4A100C32BA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		3DEC122C089ED4A100C32BA6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7FC2006031BD000904F30 /* Credits.rtf */; };
-		3DEC122D089ED4A100C32BA6 /* ScareDocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3DDEC5AD0609F31E005EF3F2 /* ScareDocIcon.icns */; };
-		3DEC122E089ED4A100C32BA6 /* ScareAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3DDEC5AF0609F324005EF3F2 /* ScareAppIcon.icns */; };
 		3DEC1230089ED4A100C32BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		3DEC1231089ED4A100C32BA6 /* GlkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABDE0497AAD100A8E303 /* GlkSession.m */; };
 		3DEC1232089ED4A100C32BA6 /* GlkWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABE20497AFF800A8E303 /* GlkWindow.m */; };
@@ -81,22 +68,11 @@
 		3DEC124D089ED4A100C32BA6 /* scinterf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5B05FF0DE8007FC823 /* scinterf.c */; };
 		3DEC124E089ED4A100C32BA6 /* scutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5C05FF0DE8007FC823 /* scutils.c */; };
 		3DEC124F089ED4A100C32BA6 /* scgamest.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5F05FF0DE8007FC823 /* scgamest.c */; };
-		3DEC1250089ED4A100C32BA6 /* os_glk.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6005FF0DE8007FC823 /* os_glk.c */; };
 		3DEC1251089ED4A100C32BA6 /* scparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6105FF0DE8007FC823 /* scparser.c */; };
-		3DEC1252089ED4A100C32BA6 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6305FF0DE8007FC823 /* crc32.c */; };
 		3DEC1253089ED4A100C32BA6 /* scvars.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6505FF0DE8007FC823 /* scvars.c */; };
 		3DEC1254089ED4A100C32BA6 /* screstrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6605FF0DE8007FC823 /* screstrs.c */; };
-		3DEC1255089ED4A100C32BA6 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6805FF0DE8007FC823 /* zutil.c */; };
-		3DEC1256089ED4A100C32BA6 /* scrun.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6A05FF0DE8007FC823 /* scrun.c */; };
-		3DEC1257089ED4A100C32BA6 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6B05FF0DE8007FC823 /* inftrees.c */; };
 		3DEC1258089ED4A100C32BA6 /* scprops.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6C05FF0DE8007FC823 /* scprops.c */; };
-		3DEC1259089ED4A100C32BA6 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6D05FF0DE8007FC823 /* deflate.c */; };
 		3DEC125A089ED4A100C32BA6 /* scobjcts.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7005FF0DE8007FC823 /* scobjcts.c */; };
-		3DEC125B089ED4A100C32BA6 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7105FF0DE8007FC823 /* inffast.c */; };
-		3DEC125C089ED4A100C32BA6 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7205FF0DE8007FC823 /* compress.c */; };
-		3DEC125D089ED4A100C32BA6 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7305FF0DE8007FC823 /* inflate.c */; };
-		3DEC125E089ED4A100C32BA6 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7405FF0DE8007FC823 /* adler32.c */; };
-		3DEC125F089ED4A100C32BA6 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7505FF0DE8007FC823 /* trees.c */; };
 		3DEC1260089ED4A100C32BA6 /* scserial.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7605FF0DE8007FC823 /* scserial.c */; };
 		3DEC1261089ED4A100C32BA6 /* sclibrar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7705FF0DE8007FC823 /* sclibrar.c */; };
 		3DEC1262089ED4A100C32BA6 /* scprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7905FF0DE8007FC823 /* scprintf.c */; };
@@ -105,90 +81,48 @@
 		3DEC1265089ED4A100C32BA6 /* NSBundle+Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF75D330602FFF90056AA39 /* NSBundle+Types.m */; };
 		3DEC1266089ED4A100C32BA6 /* scresour.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DF303061CAE2D00EB1701 /* scresour.c */; };
 		3DEC1268089ED4A100C32BA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		5563A53A2720B9C0005B40E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5563A5382720B9C0005B40E0 /* MainMenu.xib */; };
+		5563A53C2720BA3B005B40E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5563A53B2720BA3B005B40E0 /* Images.xcassets */; };
+		5563A5402720C6E8005B40E0 /* scmemos.c in Sources */ = {isa = PBXBuildFile; fileRef = 5563A53F2720C6E8005B40E0 /* scmemos.c */; };
+		5563A5412720C728005B40E0 /* scrunner.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6A05FF0DE8007FC823 /* scrunner.c */; };
+		5563A5452720CA55005B40E0 /* sclocale.c in Sources */ = {isa = PBXBuildFile; fileRef = 5563A5442720CA55005B40E0 /* sclocale.c */; };
+		5563A5472720CAD3005B40E0 /* glkstart.h in Headers */ = {isa = PBXBuildFile; fileRef = 5563A5462720CAD3005B40E0 /* glkstart.h */; };
+		5563A5482720CAE9005B40E0 /* os_glk.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6005FF0DE8007FC823 /* os_glk.c */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEPLOYMENT_POSTPROCESSING = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* CocoaGlk_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGlk_Prefix.h; sourceTree = "<group>"; };
 		3D2DF303061CAE2D00EB1701 /* scresour.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scresour.c; sourceTree = "<group>"; };
 		3D7B8F5405FF0DE8007FC823 /* sctafpar.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = sctafpar.c; sourceTree = "<group>"; };
 		3D7B8F5505FF0DE8007FC823 /* scnpcs.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scnpcs.c; sourceTree = "<group>"; };
-		3D7B8F5605FF0DE8007FC823 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
 		3D7B8F5705FF0DE8007FC823 /* scevents.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scevents.c; sourceTree = "<group>"; };
 		3D7B8F5805FF0DE8007FC823 /* sctasks.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = sctasks.c; sourceTree = "<group>"; };
 		3D7B8F5905FF0DE8007FC823 /* scexpr.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scexpr.c; sourceTree = "<group>"; };
 		3D7B8F5B05FF0DE8007FC823 /* scinterf.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scinterf.c; sourceTree = "<group>"; };
 		3D7B8F5C05FF0DE8007FC823 /* scutils.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scutils.c; sourceTree = "<group>"; };
-		3D7B8F5D05FF0DE8007FC823 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
-		3D7B8F5E05FF0DE8007FC823 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
 		3D7B8F5F05FF0DE8007FC823 /* scgamest.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scgamest.c; sourceTree = "<group>"; };
 		3D7B8F6005FF0DE8007FC823 /* os_glk.c */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 8; lastKnownFileType = sourcecode.c.c; path = os_glk.c; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		3D7B8F6105FF0DE8007FC823 /* scparser.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scparser.c; sourceTree = "<group>"; };
 		3D7B8F6205FF0DE8007FC823 /* scprotos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = scprotos.h; sourceTree = "<group>"; };
-		3D7B8F6305FF0DE8007FC823 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
-		3D7B8F6405FF0DE8007FC823 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
 		3D7B8F6505FF0DE8007FC823 /* scvars.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scvars.c; sourceTree = "<group>"; };
 		3D7B8F6605FF0DE8007FC823 /* screstrs.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = screstrs.c; sourceTree = "<group>"; };
-		3D7B8F6705FF0DE8007FC823 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
-		3D7B8F6805FF0DE8007FC823 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
-		3D7B8F6905FF0DE8007FC823 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
-		3D7B8F6A05FF0DE8007FC823 /* scrun.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scrun.c; sourceTree = "<group>"; };
-		3D7B8F6B05FF0DE8007FC823 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		3D7B8F6A05FF0DE8007FC823 /* scrunner.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scrunner.c; sourceTree = "<group>"; };
 		3D7B8F6C05FF0DE8007FC823 /* scprops.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scprops.c; sourceTree = "<group>"; };
-		3D7B8F6D05FF0DE8007FC823 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
 		3D7B8F6E05FF0DE8007FC823 /* scgamest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = scgamest.h; sourceTree = "<group>"; };
-		3D7B8F6F05FF0DE8007FC823 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
 		3D7B8F7005FF0DE8007FC823 /* scobjcts.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scobjcts.c; sourceTree = "<group>"; };
-		3D7B8F7105FF0DE8007FC823 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
-		3D7B8F7205FF0DE8007FC823 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
-		3D7B8F7305FF0DE8007FC823 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
-		3D7B8F7405FF0DE8007FC823 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
-		3D7B8F7505FF0DE8007FC823 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
 		3D7B8F7605FF0DE8007FC823 /* scserial.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scserial.c; sourceTree = "<group>"; };
 		3D7B8F7705FF0DE8007FC823 /* sclibrar.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = sclibrar.c; sourceTree = "<group>"; };
-		3D7B8F7805FF0DE8007FC823 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
 		3D7B8F7905FF0DE8007FC823 /* scprintf.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scprintf.c; sourceTree = "<group>"; };
 		3D7B8F7A05FF0DE8007FC823 /* sctaffil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = sctaffil.c; sourceTree = "<group>"; };
-		3D7B8F7B05FF0DE8007FC823 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		3D7B8F7C05FF0DE8007FC823 /* scdebug.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scdebug.c; sourceTree = "<group>"; };
-		3D7B8F7D05FF0DE8007FC823 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
 		3D7B8F7E05FF0DE8007FC823 /* scare.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = scare.h; sourceTree = "<group>"; };
-		3DC7FC2106031BD000904F30 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3DDEC5AD0609F31E005EF3F2 /* ScareDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ScareDocIcon.icns; sourceTree = "<group>"; };
 		3DDEC5AF0609F324005EF3F2 /* ScareAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ScareAppIcon.icns; sourceTree = "<group>"; };
-		3DEC126D089ED4A100C32BA6 /* Info-MacScare.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-MacScare.plist"; sourceTree = "<group>"; };
+		3DEC126D089ED4A100C32BA6 /* Info-MacScare.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-MacScare.plist"; sourceTree = "<group>"; };
 		3DEC126E089ED4A200C32BA6 /* MacScare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacScare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF75D320602FFF90056AA39 /* NSBundle+Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Types.h"; sourceTree = "<group>"; };
 		3DF75D330602FFF90056AA39 /* NSBundle+Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Types.m"; sourceTree = "<group>"; };
@@ -240,6 +174,13 @@
 		4BDBA81E049B97D100A8E303 /* GlkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkStatus.m; sourceTree = "<group>"; };
 		4BDBA821049B980000A8E303 /* glkInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkInternal.h; sourceTree = "<group>"; };
 		4BDBA825049BA43900A8E303 /* multiwin.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = multiwin.c; sourceTree = "<group>"; };
+		5563A5352720B951005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5563A5362720B951005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5563A5392720B9C0005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5563A53B2720BA3B005B40E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MacScare/Images.xcassets; sourceTree = "<group>"; };
+		5563A53F2720C6E8005B40E0 /* scmemos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scmemos.c; sourceTree = "<group>"; };
+		5563A5442720CA55005B40E0 /* sclocale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sclocale.c; sourceTree = "<group>"; };
+		5563A5462720CAD3005B40E0 /* glkstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkstart.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,9 +256,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5563A53B2720BA3B005B40E0 /* Images.xcassets */,
 				3DEC126D089ED4A100C32BA6 /* Info-MacScare.plist */,
 				3DC7FC2006031BD000904F30 /* Credits.rtf */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				5563A5382720B9C0005B40E0 /* MainMenu.xib */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				3DDEC5AF0609F324005EF3F2 /* ScareAppIcon.icns */,
 				3DDEC5AD0609F31E005EF3F2 /* ScareDocIcon.icns */,
@@ -337,49 +279,32 @@
 		3D0A26F705DE8008003E9430 /* Scare */ = {
 			isa = PBXGroup;
 			children = (
-				3D7B8F5405FF0DE8007FC823 /* sctafpar.c */,
-				3D7B8F5505FF0DE8007FC823 /* scnpcs.c */,
-				3D7B8F5605FF0DE8007FC823 /* inftrees.h */,
-				3D7B8F5705FF0DE8007FC823 /* scevents.c */,
-				3D7B8F5805FF0DE8007FC823 /* sctasks.c */,
-				3D7B8F5905FF0DE8007FC823 /* scexpr.c */,
-				3D7B8F5B05FF0DE8007FC823 /* scinterf.c */,
-				3D7B8F5C05FF0DE8007FC823 /* scutils.c */,
-				3D7B8F5D05FF0DE8007FC823 /* inffast.h */,
-				3D7B8F5E05FF0DE8007FC823 /* inflate.h */,
-				3D7B8F5F05FF0DE8007FC823 /* scgamest.c */,
 				3D7B8F6005FF0DE8007FC823 /* os_glk.c */,
-				3D7B8F6105FF0DE8007FC823 /* scparser.c */,
-				3D7B8F6205FF0DE8007FC823 /* scprotos.h */,
-				3D7B8F6305FF0DE8007FC823 /* crc32.c */,
-				3D7B8F6405FF0DE8007FC823 /* trees.h */,
-				3D7B8F6505FF0DE8007FC823 /* scvars.c */,
-				3D7B8F6605FF0DE8007FC823 /* screstrs.c */,
-				3D2DF303061CAE2D00EB1701 /* scresour.c */,
-				3D7B8F6705FF0DE8007FC823 /* zconf.h */,
-				3D7B8F6805FF0DE8007FC823 /* zutil.c */,
-				3D7B8F6905FF0DE8007FC823 /* zutil.h */,
-				3D7B8F6A05FF0DE8007FC823 /* scrun.c */,
-				3D7B8F6B05FF0DE8007FC823 /* inftrees.c */,
-				3D7B8F6C05FF0DE8007FC823 /* scprops.c */,
-				3D7B8F6D05FF0DE8007FC823 /* deflate.c */,
-				3D7B8F6E05FF0DE8007FC823 /* scgamest.h */,
-				3D7B8F6F05FF0DE8007FC823 /* deflate.h */,
-				3D7B8F7005FF0DE8007FC823 /* scobjcts.c */,
-				3D7B8F7105FF0DE8007FC823 /* inffast.c */,
-				3D7B8F7205FF0DE8007FC823 /* compress.c */,
-				3D7B8F7305FF0DE8007FC823 /* inflate.c */,
-				3D7B8F7405FF0DE8007FC823 /* adler32.c */,
-				3D7B8F7505FF0DE8007FC823 /* trees.c */,
-				3D7B8F7605FF0DE8007FC823 /* scserial.c */,
-				3D7B8F7705FF0DE8007FC823 /* sclibrar.c */,
-				3D7B8F7805FF0DE8007FC823 /* crc32.h */,
-				3D7B8F7905FF0DE8007FC823 /* scprintf.c */,
-				3D7B8F7A05FF0DE8007FC823 /* sctaffil.c */,
-				3D7B8F7B05FF0DE8007FC823 /* zlib.h */,
-				3D7B8F7C05FF0DE8007FC823 /* scdebug.c */,
-				3D7B8F7D05FF0DE8007FC823 /* inffixed.h */,
 				3D7B8F7E05FF0DE8007FC823 /* scare.h */,
+				3D7B8F7C05FF0DE8007FC823 /* scdebug.c */,
+				3D7B8F5705FF0DE8007FC823 /* scevents.c */,
+				3D7B8F5905FF0DE8007FC823 /* scexpr.c */,
+				3D7B8F5F05FF0DE8007FC823 /* scgamest.c */,
+				3D7B8F6E05FF0DE8007FC823 /* scgamest.h */,
+				3D7B8F5B05FF0DE8007FC823 /* scinterf.c */,
+				3D7B8F7705FF0DE8007FC823 /* sclibrar.c */,
+				5563A5442720CA55005B40E0 /* sclocale.c */,
+				5563A53F2720C6E8005B40E0 /* scmemos.c */,
+				3D7B8F5505FF0DE8007FC823 /* scnpcs.c */,
+				3D7B8F7005FF0DE8007FC823 /* scobjcts.c */,
+				3D7B8F6105FF0DE8007FC823 /* scparser.c */,
+				3D7B8F7905FF0DE8007FC823 /* scprintf.c */,
+				3D7B8F6C05FF0DE8007FC823 /* scprops.c */,
+				3D7B8F6205FF0DE8007FC823 /* scprotos.h */,
+				3D2DF303061CAE2D00EB1701 /* scresour.c */,
+				3D7B8F6605FF0DE8007FC823 /* screstrs.c */,
+				3D7B8F6A05FF0DE8007FC823 /* scrunner.c */,
+				3D7B8F7605FF0DE8007FC823 /* scserial.c */,
+				3D7B8F7A05FF0DE8007FC823 /* sctaffil.c */,
+				3D7B8F5405FF0DE8007FC823 /* sctafpar.c */,
+				3D7B8F5805FF0DE8007FC823 /* sctasks.c */,
+				3D7B8F5C05FF0DE8007FC823 /* scutils.c */,
+				3D7B8F6505FF0DE8007FC823 /* scvars.c */,
 			);
 			name = Scare;
 			path = scare;
@@ -397,6 +322,7 @@
 		4B74AB850497A81500A8E303 /* C_source */ = {
 			isa = PBXGroup;
 			children = (
+				5563A5462720CAD3005B40E0 /* glkstart.h */,
 				4B74AB860497A82D00A8E303 /* glk.h */,
 				4BDBA815049B7CEF00A8E303 /* glk.m */,
 				4BDBA821049B980000A8E303 /* glkInternal.h */,
@@ -541,18 +467,9 @@
 				3DEC1218089ED4A100C32BA6 /* GlkGraphicsView.h in Headers */,
 				3DEC1219089ED4A100C32BA6 /* GlkImage.h in Headers */,
 				3DEC121A089ED4A100C32BA6 /* GlkTextContainer.h in Headers */,
-				3DEC121B089ED4A100C32BA6 /* inftrees.h in Headers */,
-				3DEC121C089ED4A100C32BA6 /* inffast.h in Headers */,
-				3DEC121D089ED4A100C32BA6 /* inflate.h in Headers */,
 				3DEC121E089ED4A100C32BA6 /* scprotos.h in Headers */,
-				3DEC121F089ED4A100C32BA6 /* trees.h in Headers */,
-				3DEC1220089ED4A100C32BA6 /* zconf.h in Headers */,
-				3DEC1221089ED4A100C32BA6 /* zutil.h in Headers */,
+				5563A5472720CAD3005B40E0 /* glkstart.h in Headers */,
 				3DEC1222089ED4A100C32BA6 /* scgamest.h in Headers */,
-				3DEC1223089ED4A100C32BA6 /* deflate.h in Headers */,
-				3DEC1224089ED4A100C32BA6 /* crc32.h in Headers */,
-				3DEC1225089ED4A100C32BA6 /* zlib.h in Headers */,
-				3DEC1226089ED4A100C32BA6 /* inffixed.h in Headers */,
 				3DEC1227089ED4A100C32BA6 /* scare.h in Headers */,
 				3DEC1228089ED4A100C32BA6 /* NSBundle+Types.h in Headers */,
 			);
@@ -567,18 +484,6 @@
 			buildConfigurationList = 3DEC11F0089EB50700C32BA6 /* Build configuration list for PBXLegacyTarget "ScareCLI" */;
 			buildPhases = (
 			);
-			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ScareCLI;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			buildToolPath = /usr/bin/make;
 			buildWorkingDirectory = scare/;
 			dependencies = (
@@ -601,25 +506,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				DEBUGGING_SYMBOLS = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "-D__unix=1";
-				OTHER_LDFLAGS = "";
-				PRECOMPILE_PREFIX_HEADER = YES;
-				PREFIX_HEADER = CocoaGlk_Prefix.h;
-				PRODUCT_NAME = MacScare;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
 			);
 			name = MacScare;
@@ -633,16 +519,20 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 3DEC11F4089EB50700C32BA6 /* Build configuration list for PBXProject "MacScare" */;
-			buildSettings = {
+			attributes = {
+				LastUpgradeCheck = 1300;
 			};
-			buildStyles = (
-				4A9504CCFFE6A4B311CA0CBA /* Development */,
-				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
-			);
+			buildConfigurationList = 3DEC11F4089EB50700C32BA6 /* Build configuration list for PBXProject "MacScare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CocoaGlk */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				3DEC1202089ED4A100C32BA6 /* MacScare */,
 				3DFE639E060AF64500977C98 /* ScareCLI */,
@@ -655,11 +545,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEC122A089ED4A100C32BA6 /* MainMenu.nib in Resources */,
 				3DEC122B089ED4A100C32BA6 /* InfoPlist.strings in Resources */,
 				3DEC122C089ED4A100C32BA6 /* Credits.rtf in Resources */,
-				3DEC122D089ED4A100C32BA6 /* ScareDocIcon.icns in Resources */,
-				3DEC122E089ED4A100C32BA6 /* ScareAppIcon.icns in Resources */,
+				5563A53C2720BA3B005B40E0 /* Images.xcassets in Resources */,
+				5563A53A2720B9C0005B40E0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,17 +570,20 @@
 				3DEC1238089ED4A100C32BA6 /* GlkTextBufferView.m in Sources */,
 				3DEC1239089ED4A100C32BA6 /* GlkEvent.m in Sources */,
 				3DEC123A089ED4A100C32BA6 /* glk.m in Sources */,
+				5563A5402720C6E8005B40E0 /* scmemos.c in Sources */,
 				3DEC123B089ED4A100C32BA6 /* GlkStatus.m in Sources */,
 				3DEC123C089ED4A100C32BA6 /* GlkTextGridView.m in Sources */,
 				3DEC123D089ED4A100C32BA6 /* GlkTextView.m in Sources */,
 				3DEC123E089ED4A100C32BA6 /* GlkFileStream.m in Sources */,
 				3DEC123F089ED4A100C32BA6 /* GlkMemoryStream.m in Sources */,
+				5563A5452720CA55005B40E0 /* sclocale.c in Sources */,
 				3DEC1240089ED4A100C32BA6 /* gi_dispa.c in Sources */,
 				3DEC1241089ED4A100C32BA6 /* gi_blorb.c in Sources */,
 				3DEC1242089ED4A100C32BA6 /* gi_dispa.m in Sources */,
 				3DEC1243089ED4A100C32BA6 /* gi_blorb.m in Sources */,
 				3DEC1244089ED4A100C32BA6 /* GlkWriteBufferedStream.m in Sources */,
 				3DEC1245089ED4A100C32BA6 /* GlkGraphicsView.m in Sources */,
+				5563A5482720CAE9005B40E0 /* os_glk.c in Sources */,
 				3DEC1246089ED4A100C32BA6 /* GlkImage.m in Sources */,
 				3DEC1247089ED4A100C32BA6 /* GlkTextContainer.m in Sources */,
 				3DEC1248089ED4A100C32BA6 /* sctafpar.c in Sources */,
@@ -702,22 +594,12 @@
 				3DEC124D089ED4A100C32BA6 /* scinterf.c in Sources */,
 				3DEC124E089ED4A100C32BA6 /* scutils.c in Sources */,
 				3DEC124F089ED4A100C32BA6 /* scgamest.c in Sources */,
-				3DEC1250089ED4A100C32BA6 /* os_glk.c in Sources */,
 				3DEC1251089ED4A100C32BA6 /* scparser.c in Sources */,
-				3DEC1252089ED4A100C32BA6 /* crc32.c in Sources */,
 				3DEC1253089ED4A100C32BA6 /* scvars.c in Sources */,
 				3DEC1254089ED4A100C32BA6 /* screstrs.c in Sources */,
-				3DEC1255089ED4A100C32BA6 /* zutil.c in Sources */,
-				3DEC1256089ED4A100C32BA6 /* scrun.c in Sources */,
-				3DEC1257089ED4A100C32BA6 /* inftrees.c in Sources */,
+				5563A5412720C728005B40E0 /* scrunner.c in Sources */,
 				3DEC1258089ED4A100C32BA6 /* scprops.c in Sources */,
-				3DEC1259089ED4A100C32BA6 /* deflate.c in Sources */,
 				3DEC125A089ED4A100C32BA6 /* scobjcts.c in Sources */,
-				3DEC125B089ED4A100C32BA6 /* inffast.c in Sources */,
-				3DEC125C089ED4A100C32BA6 /* compress.c in Sources */,
-				3DEC125D089ED4A100C32BA6 /* inflate.c in Sources */,
-				3DEC125E089ED4A100C32BA6 /* adler32.c in Sources */,
-				3DEC125F089ED4A100C32BA6 /* trees.c in Sources */,
 				3DEC1260089ED4A100C32BA6 /* scserial.c in Sources */,
 				3DEC1261089ED4A100C32BA6 /* sclibrar.c in Sources */,
 				3DEC1262089ED4A100C32BA6 /* scprintf.c in Sources */,
@@ -734,25 +616,25 @@
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				5563A5362720B951005B40E0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
-			);
-			name = MainMenu.nib;
 			sourceTree = "<group>";
 		};
 		3DC7FC2006031BD000904F30 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3DC7FC2106031BD000904F30 /* English */,
+				5563A5352720B951005B40E0 /* en */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5563A5382720B9C0005B40E0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5563A5392720B9C0005B40E0 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -761,9 +643,9 @@
 		3DEC11F1089EB50700C32BA6 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OPTIMIZATION_CFLAGS = "-O0";
@@ -784,9 +666,9 @@
 		3DEC11F2089EB50700C32BA6 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -805,6 +687,7 @@
 		3DEC11F3089EB50700C32BA6 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -821,39 +704,133 @@
 		3DEC11F5089EB50700C32BA6 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
 		3DEC11F6089EB50700C32BA6 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 			};
 			name = Deployment;
 		};
 		3DEC11F7089EB50700C32BA6 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 			};
 			name = Default;
 		};
 		3DEC126A089ED4A100C32BA6 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ScareAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoaGlk_Prefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-MacScare__Upgraded_.plist";
+				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.3.3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -869,10 +846,13 @@
 		3DEC126B089ED4A100C32BA6 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ScareAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoaGlk_Prefix.h;
@@ -881,8 +861,10 @@
 				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.3.3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -898,17 +880,23 @@
 		3DEC126C089ED4A100C32BA6 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ScareAppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoaGlk_Prefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-MacScare__Upgraded_.plist";
+				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.3.3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (

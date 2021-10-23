@@ -40,7 +40,7 @@
 }
 
 
--(BOOL) validateMenuItem: (id<NSMenuItem>)mi
+-(BOOL) validateMenuItem: (NSMenuItem*)mi
 {
 	if( [mi action] == @selector(toggleSpeechSynthesis:) )
 	{
@@ -99,7 +99,6 @@
                         [splitter addSubview: [[glkWin left] view]];
                     }
 
-                    [splitter setIsPaneSplitter: YES];
                     [self addSubview: splitter];
                     //[splitter release];
                 }

@@ -49,16 +49,19 @@
     pos = NSMakePoint(0,0);
 
     for (y=0; y<winSize.height; y++) {
-        if (1 || (pos.y >= rect.origin.y &&
+		if (/* DISABLES CODE */ (1) || (pos.y >= rect.origin.y &&
             pos.y <= rect.origin.y + fntSz.height)) {
             NSMutableAttributedString* lineToDraw;
 
-            NSString* lineString = [NSString stringWithCString: grid[y]
-                                                        length: winSize.width];
+			NSData *lineData = [NSData dataWithBytes:grid[y]
+											  length:winSize.width];
+            NSString* lineString = [[NSString alloc] initWithData:lineData
+														 encoding:NSUTF8StringEncoding];
 
             lineToDraw =
                 [[NSMutableAttributedString allocWithZone: [self zone]] initWithString: lineString
                                                                      attributes: attr];
+			[lineString release];
 
             if (flashOn && [glkWin cursorPoint].y == y) {
                 NSMutableDictionary* newAttr = [attr mutableCopy];

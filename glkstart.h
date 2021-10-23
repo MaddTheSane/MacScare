@@ -21,7 +21,7 @@
 //  executable and the name of the file to open as the two arguments)
 typedef struct glkunix_startup_struct {
     int argc;
-    char **argv;
+    const char **argv;
 } glkunix_startup_t;
 
 
@@ -46,7 +46,7 @@ extern glkunix_argumentlist_t glkunix_arguments[];
 
 
 // Additional functions you can call from your glkunix_startup_code():
-strid_t glkunix_stream_open_pathname(char *pathname, glui32 textmode, 
+strid_t glkunix_stream_open_pathname(const char *pathname, glui32 textmode, 
     glui32 rock);
 
 

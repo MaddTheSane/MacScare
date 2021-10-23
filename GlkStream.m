@@ -44,8 +44,7 @@
 }
 
 - (void)       putString: (NSString*) string {
-    [self putBuffer: [NSData dataWithBytes: [string cString]
-                                    length: [string cStringLength]]];
+    [self putBuffer: [string dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
 - (void)       putBuffer: (NSData*) buffer {

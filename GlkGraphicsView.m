@@ -27,7 +27,7 @@
     [img drawInRect: [self bounds]
            fromRect: NSMakeRect(0,0,
                                 [img size].width, [img size].height)
-          operation: NSCompositeSourceOver
+          operation: NSCompositingOperationSourceOver
            fraction: 1.0];
 }
 

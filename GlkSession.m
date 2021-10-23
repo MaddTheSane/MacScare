@@ -23,10 +23,10 @@
 #define propSize 14
 #define fixSize  12
 
-NSString* GlkSessionKey = @"GlkSessionKey";
-NSString* GlkStatusKey  = @"GlkStatus";
+NSString*const GlkSessionKey = @"GlkSessionKey";
+NSString*const GlkStatusKey  = @"GlkStatus";
 
-NSString* GlkFlushYourBuffers = @"GlkFlushDemBuffers";
+NSString*const GlkFlushYourBuffers = @"GlkFlushDemBuffers";
 
 enum glkSessionConditions {
     GlkSessionNoEvents = 0,
@@ -81,7 +81,7 @@ enum glkSessionConditions {
         
         // Create the user interface elements
         sessionWindow = [[NSWindow allocWithZone: [self zone]] initWithContentRect: NSMakeRect(100, 0, 800, 800)
-                                                                         styleMask:NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask
+																		 styleMask:NSWindowStyleMaskTitled|NSWindowStyleMaskClosable|NSWindowStyleMaskMiniaturizable|NSWindowStyleMaskResizable
                                                                            backing: NSBackingStoreBuffered
                                                                              defer: YES];
         [sessionWindow setDelegate: self];
@@ -185,13 +185,13 @@ enum glkSessionConditions {
 
 - (void) glkMain: (NSString*)filename
 {
-	char*				args[2];
+	const char*				args[2];
 	glkunix_startup_t   fakeArgs = { 2, args };
 	GlkStatus* stat = [[GlkStatus allocWithZone: [self zone]] init];
 
-    [stat autorelease];
     [[[NSThread currentThread] threadDictionary] setObject: stat
                                                     forKey: GlkStatusKey];
+	[stat release];
 	
 	args[0] = [[[NSBundle mainBundle] executablePath] fileSystemRepresentation];
 	args[1] = [filename fileSystemRepresentation];
@@ -287,7 +287,7 @@ enum glkSessionConditions {
         
         [threadPool release];
 
-        threadPool = [[NSAutoreleasePool allocWithZone: [self zone]] init];
+		@autoreleasepool {
 
         [glkthreadConnection release];
         [mainthreadConnection release];
@@ -300,15 +300,15 @@ enum glkSessionConditions {
         port1 = nil;
         port2 = nil;
         
-        [threadPool release];
-        
+		}
+		
         [NSThread exit];
     }
 }
 
 - (void) tick {
     NSDate* tock = [NSDate date];
-    [tock addTimeInterval: 0.01];
+    tock = [tock dateByAddingTimeInterval: 0.01];
     
     [[NSRunLoop currentRunLoop] acceptInputForMode: NSDefaultRunLoopMode
                                         beforeDate: tock];    
@@ -496,22 +496,14 @@ enum glkSessionConditions {
     return [str autorelease];
 }
 
-- (void) setCurrentStream: (GlkStream*) stream {
-    if (currentStream)
-        [currentStream release];
-    currentStream = [stream retain];
-}
-
-- (GlkStream*) currentStream {
-    return currentStream;
-}
+@synthesize currentStream;
 
 - (void)       putChar: (unsigned char) ch {
     [currentStream putChar: ch];
 }
 
 - (void)       putString: (const char*) s {
-    [currentStream putString: [NSString stringWithCString: s]];
+    [currentStream putString: @(s)];
 }
 
 - (void)       putBuffer: (const char*) buf
@@ -577,7 +569,7 @@ enum glkSessionConditions {
                           rock: (glui32) rock
                      withUsage: (glui32) usage {
     GlkFileRef* res = [[GlkFileRef allocWithZone: [self zone]]
-        initWithName: [NSString stringWithCString: name]
+        initWithName: @(name)
            withUsage: usage
           forSession: self];
 
@@ -686,43 +678,37 @@ enum glkSessionConditions {
     }
 
     // Display the panel
+	thePanel.directoryURL = [NSUserDefaults.standardUserDefaults URLForKey:@"SaveDirectory"];
     if (!openPanel) {
-        [thePanel beginSheetForDirectory:[[NSUserDefaults standardUserDefaults] objectForKey: @"SaveDirectory"]
-                                    file:nil
-                          modalForWindow:sessionWindow
-                           modalDelegate:self
-                          didEndSelector:@selector(savePanelDidEnd:returnCode:contextInfo:)
-                             contextInfo:nil];
+		[thePanel beginSheetModalForWindow:sessionWindow completionHandler:^(NSModalResponse result) {
+			[self savePanelDidEnd:thePanel returnCode:result contextInfo:NULL];
+		}];
     } else {
-        [(NSOpenPanel*)thePanel beginSheetForDirectory:[[NSUserDefaults standardUserDefaults] objectForKey: @"SaveDirectory"]
-                                                  file:nil
-                                                 types:nil
-                                        modalForWindow:sessionWindow
-                                         modalDelegate:self
-                                        didEndSelector:@selector(openPanelDidEnd:returnCode:contextInfo:)
-                                           contextInfo:nil];
+		[(NSOpenPanel*)thePanel beginSheetModalForWindow:sessionWindow completionHandler:^(NSModalResponse result) {
+			[self openPanelDidEnd:(NSOpenPanel*)thePanel returnCode:result contextInfo:NULL];
+		}];
     }
 }
 
 - (void)savePanelDidEnd:(NSSavePanel *)sheet
-             returnCode:(int)returnCode
+             returnCode:(NSModalResponse)returnCode
             contextInfo:(void  *)contextInfo {
-    if (returnCode == NSOKButton) {
-        [[NSUserDefaults standardUserDefaults] setObject: [sheet directory]
+	if (returnCode == NSModalResponseOK) {
+        [[NSUserDefaults standardUserDefaults] setURL: [sheet directoryURL]
                                                   forKey: @"SaveDirectory"];
-        [self doneSaving: [sheet filename]];
+        [self doneSaving: [sheet URL].path];
     } else {
         [self doneSaving: nil];
     }
 }
 
 - (void)openPanelDidEnd:(NSOpenPanel *)sheet
-             returnCode:(int)returnCode
+             returnCode:(NSModalResponse)returnCode
             contextInfo:(void  *)contextInfo {
-    if (returnCode == NSOKButton) {
-        [[NSUserDefaults standardUserDefaults] setObject: [sheet directory]
+	if (returnCode == NSModalResponseOK) {
+        [[NSUserDefaults standardUserDefaults] setURL: [sheet directoryURL]
                                                   forKey: @"SaveDirectory"];
-        [self doneSaving: [sheet filename]];
+        [self doneSaving: [sheet URL].path];
     } else {
         [self doneSaving: nil];
     }
@@ -899,13 +885,7 @@ enum glkSessionConditions {
     return propFont;
 }
 
-- (id) objectValue {
-    return objectValue;
-}
-
-- (void) setObjectValue: (id) object {
-    objectValue = [(NSObject*)object retain];
-}
+@synthesize objectValue;
 
 // Threading
 - (BOOL) isMainThread {
@@ -1058,7 +1038,7 @@ static const int IMAGECACHESIZE = 32;
         return [(GlkSession*)[glkthreadConnection rootProxy] getImageResource: image];
     }
 
-    int cachePos = [imageCacheNumbers indexOfObject: [NSNumber numberWithInt: image]];
+    NSInteger cachePos = [imageCacheNumbers indexOfObject: @(image)];
 
     if (cachePos == NSNotFound) {
         // Create the image
@@ -1070,7 +1050,7 @@ static const int IMAGECACHESIZE = 32;
         }
 
         [imageCache addObject: img];
-        [imageCacheNumbers addObject: [NSNumber numberWithInt: image]];
+        [imageCacheNumbers addObject: @(image)];
 
         if ([imageCache count] > IMAGECACHESIZE) {
             [imageCache removeObjectAtIndex: 0];
@@ -1087,7 +1067,7 @@ static const int IMAGECACHESIZE = 32;
         [imageCacheNumbers removeObjectAtIndex: cachePos];
         
         [imageCache addObject: img];
-        [imageCacheNumbers addObject: [NSNumber numberWithInt: image]];
+        [imageCacheNumbers addObject: @(image)];
         
         return [img autorelease];
     }
@@ -1095,7 +1075,7 @@ static const int IMAGECACHESIZE = 32;
 
 - (void) uncacheImageResource: (glui32) image {
 
-    int cachePos = [imageCacheNumbers indexOfObject: [NSNumber numberWithInt: image]];
+    NSInteger cachePos = [imageCacheNumbers indexOfObject: @(image)];
 
     if (cachePos != NSNotFound) {
         [imageCache removeObjectAtIndex: cachePos];

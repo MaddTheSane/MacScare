@@ -11,7 +11,7 @@
 #import "GlkWindow.h"
 #import "glk.h"
 
-extern NSString* GlkImageAttributeName;
+extern NSString* const GlkImageAttributeName;
 
 @class GlkWindow;
 @interface GlkImage : NSObject {

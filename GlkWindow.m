@@ -12,6 +12,10 @@
 
 #import "GlkImage.h"
 
+@interface NSFont (oldDeprecated)
+- (CGFloat)widthOfString:(NSString*)str;
+@end
+
 // Utility functions
 GlkArrangement GlkMakeArrangement(glui32 method, glui32 size, GlkWindow* keyWin) {
     GlkArrangement r;
@@ -84,9 +88,9 @@ GlkPoint GlkMakePoint(int x, int y) {
         // Styles
         int x;
         for (x=0; x<style_NUMSTYLES; x++) {
-            font[style_NUMSTYLES]      = nil;
-            fontColour[style_NUMSTYLES] = nil;
-            backColour[style_NUMSTYLES] = nil;
+            font[x]      = nil;
+            fontColour[x] = nil;
+            backColour[x] = nil;
 
             int y;
 
@@ -276,7 +280,7 @@ GlkPoint GlkMakePoint(int x, int y) {
 }
 
 - (stream_result_t) close {
-    stream_result_t res;
+	stream_result_t res = {0};
 
     if (!open) {
         NSLog(@"Warning: attempt to close window that's already open");
@@ -497,7 +501,7 @@ GlkPoint GlkMakePoint(int x, int y) {
 
     if (text && inputPos < [text length]) {
         // There is input data waiting... Clear it out
-        int iLen = [text length]-inputPos;
+        NSInteger iLen = [text length]-inputPos;
 
         [pendingInput appendString:
             [[text string] substringWithRange: NSMakeRange(inputPos,
@@ -779,7 +783,7 @@ GlkPoint GlkMakePoint(int x, int y) {
     }
 
     if (type == wintype_TextGrid && textBuffer != nil && [textBuffer length] > 0) {
-        const char* cStr = [[textBuffer string] cString];
+        const char* cStr = [[textBuffer string] UTF8String];
         int x;
 
         x = 0;
@@ -1134,20 +1138,20 @@ static void addFontAttribute(NSMutableArray* fontList,
             // Alignment
             switch (styleHint[stylehint_Justification][sty]) {
                 case stylehint_just_RightFlush:
-                    [pStyle setAlignment: NSRightTextAlignment];
+                    [pStyle setAlignment: NSTextAlignmentRight];
                     break;
 
                 case stylehint_just_Centered:
-                    [pStyle setAlignment: NSCenterTextAlignment];
+					[pStyle setAlignment: NSTextAlignmentCenter];
                     break;
                     
                 case stylehint_just_LeftRight:
-                    [pStyle setAlignment: NSJustifiedTextAlignment];
+					[pStyle setAlignment: NSTextAlignmentJustified];
                     break;
 
                 case stylehint_just_LeftFlush:
                 default:
-                    [pStyle setAlignment: NSLeftTextAlignment];
+					[pStyle setAlignment: NSTextAlignmentLeft];
                     break;
             }
 
@@ -1200,7 +1204,7 @@ static void addFontAttribute(NSMutableArray* fontList,
 }
 
 // == NSTextStorage delegate functions ==
-- (void)textStorageDidProcessEditing:(NSNotification *)aNotification {
+-(void)textStorage:(NSTextStorage *)textStorage didProcessEditing:(NSTextStorageEditActions)editedMask range:(NSRange)editedRange changeInLength:(NSInteger)delta {
     // Set the input character attributes to the input style
     [text setAttributes: [self attributesForStyle: style_Input]
                   range: NSMakeRange(inputPos,
@@ -1211,7 +1215,7 @@ static void addFontAttribute(NSMutableArray* fontList,
     do {
         int x;
         NSString* str = [text string];
-        int len = [str length];
+        NSInteger len = [str length];
 
         newlinePos = -1;
 
@@ -1288,7 +1292,7 @@ static void addFontAttribute(NSMutableArray* fontList,
                fromRect: NSMakeRect(0,0,
                                     [drawMe size].width,
                                     [drawMe size].height)
-              operation: NSCompositeSourceOver
+              operation: NSCompositingOperationSourceOver
                fraction: 1.0];
 
     [image unlockFocus];
@@ -1320,10 +1324,8 @@ static void addFontAttribute(NSMutableArray* fontList,
     v2 = [image size].height - v2 - height;
     
     [drawMe drawInRect: NSMakeRect(v1, v2, width, height)
-              fromRect: NSMakeRect(0,0,
-                                   [drawMe size].width,
-                                   [drawMe size].height)
-             operation: NSCompositeSourceOver
+              fromRect: NSZeroRect
+             operation: NSCompositingOperationSourceOver
               fraction: 1.0];
 
     [image unlockFocus];

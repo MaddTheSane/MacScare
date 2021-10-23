@@ -55,7 +55,7 @@
 
             NSDictionary* attr = [glkWin attributesForStyle: style];
 
-            str = [[NSAttributedString allocWithZone: [self zone]] initWithString: [NSString stringWithCString: [buf bytes] length: [buf length]]
+            str = [[NSAttributedString alloc] initWithString: [[[NSString alloc] initWithData: buf encoding: NSUTF8StringEncoding] autorelease]
                                                                        attributes: attr];
 
             // Send the text to the window
@@ -109,8 +109,7 @@
 
 - (NSData*) getLineInBuffer: (int) length {
     NSMutableString* pending = [glkWin pendingInput];
-    NSMutableData* buf = [NSMutableData dataWithBytes: [pending cString]
-                                               length: [pending cStringLength]+1];
+    NSMutableData* buf = [[pending dataUsingEncoding:NSUTF8StringEncoding] mutableCopy];
     
     char* data = [buf mutableBytes];
 
@@ -142,7 +141,7 @@
     }
     
     // Done
-    return buf;
+    return [buf autorelease];
 }
 
 - (NSData*) getBuffer: (int) length {

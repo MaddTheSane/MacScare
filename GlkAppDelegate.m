@@ -33,9 +33,9 @@
 	{
 		sAppOpenFileBusy = YES; // Make sure this doesn't stack "open" dialogs.
 			NSOpenPanel*		opp = [NSOpenPanel openPanel];
-			
-			if( [opp runModalForTypes: [[NSBundle mainBundle] types]] == NSOKButton )
-				result = [self application: NSApp openFile: [opp filename]];
+		opp.allowedFileTypes = NSBundle.mainBundle.types;
+		if( [opp runModal] == NSModalResponseOK )
+				result = [self application: NSApp openFile: [opp URL].path];
 		sAppOpenFileBusy = NO;
 	}
 	

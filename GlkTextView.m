@@ -36,10 +36,7 @@
     
     // Draw any images that need drawing
     // For each image..
-    NSEnumerator* imgEnum = [[glkWin inlineImages] objectEnumerator];
-    GlkImage*     img;
-
-    while (img = [imgEnum nextObject]) {
+    for (GlkImage* img in [glkWin inlineImages]) {
         // Retrieve/calculate the bounds of this image
         NSRect theseBounds = [img bounds];
 
@@ -48,16 +45,16 @@
         if (NSIntersectsRect(theseBounds, rect)) {
             NSImage* drawMe = [img image];
 
-            [drawMe setFlipped: YES];
+//            [drawMe setFlipped: YES];
 
             [drawMe drawInRect: theseBounds
-                      fromRect: NSMakeRect(0,0,
-                                           [drawMe size].width,
-                                           [drawMe size].height)
-                     operation: NSCompositeSourceOver
-                      fraction: 1.0];
+                      fromRect: NSZeroRect
+                     operation: NSCompositingOperationSourceOver
+                      fraction: 1.0
+				respectFlipped: NO
+						 hints: nil];
 
-            [drawMe setFlipped: NO];
+//            [drawMe setFlipped: NO];
         }
 
         if (theseBounds.origin.y > NSMaxY(rect)) {

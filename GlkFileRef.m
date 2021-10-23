@@ -17,7 +17,7 @@
     self = [super init];
 
     if (self) {
-        path    = [[NSString stringWithCString: tmpnam(NULL)] retain];
+        path    = [@(tmpnam(NULL)) retain];
         usage   = us;
         session = [ss retain];
     }
@@ -74,7 +74,9 @@
     if (![[NSFileManager defaultManager] fileExistsAtPath:ourDir
                                               isDirectory:&isDir]) {
         isDir = [[NSFileManager defaultManager] createDirectoryAtPath:ourDir
-                                                           attributes:nil];
+										  withIntermediateDirectories:YES
+                                                           attributes:nil
+																error:NULL];
     }
 
     if (!isDir) {
@@ -131,8 +133,8 @@
 
 - (void) deleteFile {
     if ([[NSFileManager defaultManager] isDeletableFileAtPath: path]) {
-        [[NSFileManager defaultManager] removeFileAtPath: path
-                                                 handler: nil];
+        [[NSFileManager defaultManager] removeItemAtPath: path
+												   error: NULL];
     }
 }
 

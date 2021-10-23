@@ -87,7 +87,7 @@
         return;
     }
     
-    int len = [data length];
+    NSInteger len = [data length];
 
     if (bufpos + len > buflen) {
         len = buflen - bufpos;

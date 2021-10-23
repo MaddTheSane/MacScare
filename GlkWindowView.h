@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "GlkWindow.h"
 
-@interface GlkWindowView : NSView {
+@interface GlkWindowView : NSView <NSSplitViewDelegate> {
     GlkWindow* glkWin;
     NSSplitView* splitter;
 

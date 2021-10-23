@@ -36,7 +36,7 @@ extern GlkArrangement GlkMakeArrangement(glui32 method, glui32 size, GlkWindow* 
 extern GlkSize GlkMakeSize(int width, int height);
 extern GlkPoint GlkMakePoint(int x, int y);
 
-@interface GlkWindow : NSObject {
+@interface GlkWindow : NSObject <NSTextStorageDelegate> {
     GlkSession* ourSession;
     glui32      type;
 

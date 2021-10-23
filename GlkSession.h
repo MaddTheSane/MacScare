@@ -20,14 +20,14 @@
 #define BUG(x) NSLog(x); abort()
 
 // == Dictionary keys ==
-extern NSString* GlkSessionKey;
-extern NSString* GlkStatusKey;
+extern NSString* const GlkSessionKey;
+extern NSString* const GlkStatusKey;
 
 // == Notifications ==
-extern NSString* GlkFlushYourBuffers;
+extern NSString* const GlkFlushYourBuffers;
 
 // == The session object ==
-@interface GlkSession : NSObject {
+@interface GlkSession : NSObject <NSWindowDelegate> {
     NSWindow*  sessionWindow;
     
     GlkWindow* rootWindow;
@@ -114,6 +114,7 @@ extern NSString* GlkFlushYourBuffers;
 							usage: (glui32)usage
 							withMode: (glui32) mode
 							rock: (glui32) rock;
+@property (retain) GlkStream *currentStream;
 - (void)       setCurrentStream: (GlkStream*) stream;
 - (GlkStream*) currentStream;
 
@@ -174,6 +175,7 @@ extern NSString* GlkFlushYourBuffers;
                    hint: (glui32) hint
                 winType: (glui32) wintype;
 
+@property (retain) id objectValue;
 - (id)   objectValue;
 - (void) setObjectValue: (id) object;
 

@@ -11,7 +11,7 @@
 #import "GlkStream.h"
 
 
-@interface GlkTextBufferView : NSView {
+@interface GlkTextBufferView : NSView <NSTextViewDelegate> {
     GlkWindow* glkWin;
 
     NSScrollView* scrollView;

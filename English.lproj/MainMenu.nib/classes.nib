@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {toggleSpeechSynthesis = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = GlkAppDelegate; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

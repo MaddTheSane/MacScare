@@ -120,8 +120,6 @@
 		3D7B8F7A05FF0DE8007FC823 /* sctaffil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = sctaffil.c; sourceTree = "<group>"; };
 		3D7B8F7C05FF0DE8007FC823 /* scdebug.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = scdebug.c; sourceTree = "<group>"; };
 		3D7B8F7E05FF0DE8007FC823 /* scare.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = scare.h; sourceTree = "<group>"; };
-		3DDEC5AD0609F31E005EF3F2 /* ScareDocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ScareDocIcon.icns; sourceTree = "<group>"; };
-		3DDEC5AF0609F324005EF3F2 /* ScareAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ScareAppIcon.icns; sourceTree = "<group>"; };
 		3DEC126D089ED4A100C32BA6 /* Info-MacScare.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-MacScare.plist"; sourceTree = "<group>"; };
 		3DEC126E089ED4A200C32BA6 /* MacScare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacScare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF75D320602FFF90056AA39 /* NSBundle+Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Types.h"; sourceTree = "<group>"; };
@@ -175,7 +173,7 @@
 		4BDBA821049B980000A8E303 /* glkInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkInternal.h; sourceTree = "<group>"; };
 		4BDBA825049BA43900A8E303 /* multiwin.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = multiwin.c; sourceTree = "<group>"; };
 		5563A5352720B951005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		5563A5362720B951005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5563A5362720B951005B40E0 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5563A5392720B9C0005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5563A53B2720BA3B005B40E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MacScare/Images.xcassets; sourceTree = "<group>"; };
 		5563A53F2720C6E8005B40E0 /* scmemos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scmemos.c; sourceTree = "<group>"; };
@@ -261,8 +259,6 @@
 				3DC7FC2006031BD000904F30 /* Credits.rtf */,
 				5563A5382720B9C0005B40E0 /* MainMenu.xib */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				3DDEC5AF0609F324005EF3F2 /* ScareAppIcon.icns */,
-				3DDEC5AD0609F31E005EF3F2 /* ScareDocIcon.icns */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -640,72 +636,33 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3DEC11F1089EB50700C32BA6 /* Development */ = {
+		3DEC11F1089EB50700C32BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ScareCLI;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		3DEC11F2089EB50700C32BA6 /* Deployment */ = {
+		3DEC11F2089EB50700C32BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ScareCLI;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		3DEC11F3089EB50700C32BA6 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ScareCLI;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Default;
-		};
-		3DEC11F5089EB50700C32BA6 /* Development */ = {
+		3DEC11F5089EB50700C32BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -724,9 +681,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -735,14 +696,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				SDKROOT = macosx;
+				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		3DEC11F6089EB50700C32BA6 /* Deployment */ = {
+		3DEC11F6089EB50700C32BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -761,7 +726,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -770,45 +737,12 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		3DEC11F7089EB50700C32BA6 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-			};
-			name = Default;
-		};
-		3DEC126A089ED4A100C32BA6 /* Development */ = {
+		3DEC126A089ED4A100C32BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ScareAppIcon;
@@ -816,34 +750,22 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
+				CURRENT_PROJECT_VERSION = 1.3.4;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoaGlk_Prefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				MARKETING_VERSION = 1.3.3;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
+				MARKETING_VERSION = 1.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		3DEC126B089ED4A100C32BA6 /* Deployment */ = {
+		3DEC126B089ED4A100C32BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ScareAppIcon;
@@ -851,62 +773,20 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.3.4;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CocoaGlk_Prefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				MARKETING_VERSION = 1.3.3;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
+				MARKETING_VERSION = 1.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
-		};
-		3DEC126C089ED4A100C32BA6 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = ScareAppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CocoaGlk_Prefix.h;
-				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-MacScare.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "";
-				MARKETING_VERSION = 1.3.3;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
-				PRODUCT_NAME = MacScare;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -914,32 +794,29 @@
 		3DEC11F0089EB50700C32BA6 /* Build configuration list for PBXLegacyTarget "ScareCLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DEC11F1089EB50700C32BA6 /* Development */,
-				3DEC11F2089EB50700C32BA6 /* Deployment */,
-				3DEC11F3089EB50700C32BA6 /* Default */,
+				3DEC11F1089EB50700C32BA6 /* Debug */,
+				3DEC11F2089EB50700C32BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		3DEC11F4089EB50700C32BA6 /* Build configuration list for PBXProject "MacScare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DEC11F5089EB50700C32BA6 /* Development */,
-				3DEC11F6089EB50700C32BA6 /* Deployment */,
-				3DEC11F7089EB50700C32BA6 /* Default */,
+				3DEC11F5089EB50700C32BA6 /* Debug */,
+				3DEC11F6089EB50700C32BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		3DEC1269089ED4A100C32BA6 /* Build configuration list for PBXNativeTarget "MacScare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DEC126A089ED4A100C32BA6 /* Development */,
-				3DEC126B089ED4A100C32BA6 /* Deployment */,
-				3DEC126C089ED4A100C32BA6 /* Default */,
+				3DEC126A089ED4A100C32BA6 /* Debug */,
+				3DEC126B089ED4A100C32BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

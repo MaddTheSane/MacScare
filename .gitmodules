@@ -1,0 +1,3 @@
+[submodule "CocoaGlk"]
+	path = CocoaGlk
+	url = https://github.com/MaddTheSane/CocoaGlk.git

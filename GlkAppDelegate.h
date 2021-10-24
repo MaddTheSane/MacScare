@@ -7,10 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <GlkView/GlkHub.h>
 
 
-@interface GlkAppDelegate : NSObject {
-
-}
+@interface GlkAppDelegate : NSObject <GlkHubDelegate>
 
 @end

@@ -8,25 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3DEC1204089ED4A100C32BA6 /* CocoaGlk_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* CocoaGlk_Prefix.h */; };
-		3DEC1205089ED4A100C32BA6 /* GlkSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74ABDD0497AAD100A8E303 /* GlkSession.h */; };
-		3DEC1206089ED4A100C32BA6 /* GlkWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74ABE10497AFF800A8E303 /* GlkWindow.h */; };
-		3DEC1207089ED4A100C32BA6 /* GlkStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74ABE50497B92B00A8E303 /* GlkStream.h */; };
-		3DEC1208089ED4A100C32BA6 /* GlkFileRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74ABE90497BDF800A8E303 /* GlkFileRef.h */; };
 		3DEC1209089ED4A100C32BA6 /* GlkWindowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74ABEE0497CA8100A8E303 /* GlkWindowView.h */; };
 		3DEC120A089ED4A100C32BA6 /* GlkAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74ABF20497F70900A8E303 /* GlkAppDelegate.h */; };
-		3DEC120B089ED4A100C32BA6 /* GlkWindowStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74AC0F0498D4A700A8E303 /* GlkWindowStream.h */; };
 		3DEC120C089ED4A100C32BA6 /* GlkTextBufferView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74AC130498D9DF00A8E303 /* GlkTextBufferView.h */; };
-		3DEC120D089ED4A100C32BA6 /* GlkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBA7ED049B5A5100A8E303 /* GlkEvent.h */; };
 		3DEC120E089ED4A100C32BA6 /* glk.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74AB860497A82D00A8E303 /* glk.h */; };
-		3DEC120F089ED4A100C32BA6 /* GlkStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBA81D049B97D100A8E303 /* GlkStatus.h */; };
 		3DEC1210089ED4A100C32BA6 /* glkInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBA821049B980000A8E303 /* glkInternal.h */; };
 		3DEC1211089ED4A100C32BA6 /* GlkTextGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5AEC98049CB59500A8E303 /* GlkTextGridView.h */; };
 		3DEC1212089ED4A100C32BA6 /* GlkTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5AECA3049CF5EA00A8E303 /* GlkTextView.h */; };
-		3DEC1213089ED4A100C32BA6 /* GlkFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B26D91E049D1EA500A8E303 /* GlkFileStream.h */; };
-		3DEC1214089ED4A100C32BA6 /* GlkMemoryStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BBD9E08049E254900A8E303 /* GlkMemoryStream.h */; };
 		3DEC1215089ED4A100C32BA6 /* gi_dispa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBA812049B7BD900A8E303 /* gi_dispa.h */; };
 		3DEC1216089ED4A100C32BA6 /* gi_blorb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDBA80E049B7B5100A8E303 /* gi_blorb.h */; };
-		3DEC1217089ED4A100C32BA6 /* GlkWriteBufferedStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BBD9E3A049E6D8600A8E303 /* GlkWriteBufferedStream.h */; };
 		3DEC1218089ED4A100C32BA6 /* GlkGraphicsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB67C50049F778E00A8E303 /* GlkGraphicsView.h */; };
 		3DEC1219089ED4A100C32BA6 /* GlkImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B40A2C304A09B9E00A8E303 /* GlkImage.h */; };
 		3DEC121A089ED4A100C32BA6 /* GlkTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3B960304A370AD00A8E303 /* GlkTextContainer.h */; };
@@ -37,58 +27,185 @@
 		3DEC122B089ED4A100C32BA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		3DEC122C089ED4A100C32BA6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7FC2006031BD000904F30 /* Credits.rtf */; };
 		3DEC1230089ED4A100C32BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		3DEC1231089ED4A100C32BA6 /* GlkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABDE0497AAD100A8E303 /* GlkSession.m */; };
-		3DEC1232089ED4A100C32BA6 /* GlkWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABE20497AFF800A8E303 /* GlkWindow.m */; };
-		3DEC1233089ED4A100C32BA6 /* GlkStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABE60497B92B00A8E303 /* GlkStream.m */; };
-		3DEC1234089ED4A100C32BA6 /* GlkFileRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABEA0497BDF800A8E303 /* GlkFileRef.m */; };
-		3DEC1235089ED4A100C32BA6 /* GlkWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABEF0497CA8100A8E303 /* GlkWindowView.m */; };
 		3DEC1236089ED4A100C32BA6 /* GlkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74ABF30497F70900A8E303 /* GlkAppDelegate.m */; };
-		3DEC1237089ED4A100C32BA6 /* GlkWindowStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74AC100498D4A700A8E303 /* GlkWindowStream.m */; };
-		3DEC1238089ED4A100C32BA6 /* GlkTextBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B74AC140498D9DF00A8E303 /* GlkTextBufferView.m */; };
-		3DEC1239089ED4A100C32BA6 /* GlkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBA7EE049B5A5100A8E303 /* GlkEvent.m */; };
-		3DEC123A089ED4A100C32BA6 /* glk.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBA815049B7CEF00A8E303 /* glk.m */; };
-		3DEC123B089ED4A100C32BA6 /* GlkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBA81E049B97D100A8E303 /* GlkStatus.m */; };
-		3DEC123C089ED4A100C32BA6 /* GlkTextGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AEC99049CB59500A8E303 /* GlkTextGridView.m */; };
-		3DEC123D089ED4A100C32BA6 /* GlkTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AECA4049CF5EA00A8E303 /* GlkTextView.m */; };
-		3DEC123E089ED4A100C32BA6 /* GlkFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B26D91F049D1EA500A8E303 /* GlkFileStream.m */; };
-		3DEC123F089ED4A100C32BA6 /* GlkMemoryStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD9E09049E254900A8E303 /* GlkMemoryStream.m */; };
-		3DEC1240089ED4A100C32BA6 /* gi_dispa.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBA811049B7BD900A8E303 /* gi_dispa.c */; };
-		3DEC1241089ED4A100C32BA6 /* gi_blorb.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBA80D049B7B5100A8E303 /* gi_blorb.c */; };
-		3DEC1242089ED4A100C32BA6 /* gi_dispa.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD9E24049E465C00A8E303 /* gi_dispa.m */; };
-		3DEC1243089ED4A100C32BA6 /* gi_blorb.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD9E27049E51CE00A8E303 /* gi_blorb.m */; };
-		3DEC1244089ED4A100C32BA6 /* GlkWriteBufferedStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD9E3B049E6D8600A8E303 /* GlkWriteBufferedStream.m */; };
-		3DEC1245089ED4A100C32BA6 /* GlkGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB67C51049F778E00A8E303 /* GlkGraphicsView.m */; };
-		3DEC1246089ED4A100C32BA6 /* GlkImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B40A2C404A09B9E00A8E303 /* GlkImage.m */; };
-		3DEC1247089ED4A100C32BA6 /* GlkTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B960404A370AD00A8E303 /* GlkTextContainer.m */; };
-		3DEC1248089ED4A100C32BA6 /* sctafpar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5405FF0DE8007FC823 /* sctafpar.c */; };
-		3DEC1249089ED4A100C32BA6 /* scnpcs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5505FF0DE8007FC823 /* scnpcs.c */; };
-		3DEC124A089ED4A100C32BA6 /* scevents.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5705FF0DE8007FC823 /* scevents.c */; };
-		3DEC124B089ED4A100C32BA6 /* sctasks.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5805FF0DE8007FC823 /* sctasks.c */; };
-		3DEC124C089ED4A100C32BA6 /* scexpr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5905FF0DE8007FC823 /* scexpr.c */; };
-		3DEC124D089ED4A100C32BA6 /* scinterf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5B05FF0DE8007FC823 /* scinterf.c */; };
-		3DEC124E089ED4A100C32BA6 /* scutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5C05FF0DE8007FC823 /* scutils.c */; };
-		3DEC124F089ED4A100C32BA6 /* scgamest.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5F05FF0DE8007FC823 /* scgamest.c */; };
-		3DEC1251089ED4A100C32BA6 /* scparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6105FF0DE8007FC823 /* scparser.c */; };
-		3DEC1253089ED4A100C32BA6 /* scvars.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6505FF0DE8007FC823 /* scvars.c */; };
-		3DEC1254089ED4A100C32BA6 /* screstrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6605FF0DE8007FC823 /* screstrs.c */; };
-		3DEC1258089ED4A100C32BA6 /* scprops.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6C05FF0DE8007FC823 /* scprops.c */; };
-		3DEC125A089ED4A100C32BA6 /* scobjcts.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7005FF0DE8007FC823 /* scobjcts.c */; };
-		3DEC1260089ED4A100C32BA6 /* scserial.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7605FF0DE8007FC823 /* scserial.c */; };
-		3DEC1261089ED4A100C32BA6 /* sclibrar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7705FF0DE8007FC823 /* sclibrar.c */; };
-		3DEC1262089ED4A100C32BA6 /* scprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7905FF0DE8007FC823 /* scprintf.c */; };
-		3DEC1263089ED4A100C32BA6 /* sctaffil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7A05FF0DE8007FC823 /* sctaffil.c */; };
-		3DEC1264089ED4A100C32BA6 /* scdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7C05FF0DE8007FC823 /* scdebug.c */; };
 		3DEC1265089ED4A100C32BA6 /* NSBundle+Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF75D330602FFF90056AA39 /* NSBundle+Types.m */; };
-		3DEC1266089ED4A100C32BA6 /* scresour.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DF303061CAE2D00EB1701 /* scresour.c */; };
 		3DEC1268089ED4A100C32BA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		5563A53A2720B9C0005B40E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5563A5382720B9C0005B40E0 /* MainMenu.xib */; };
 		5563A53C2720BA3B005B40E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5563A53B2720BA3B005B40E0 /* Images.xcassets */; };
-		5563A5402720C6E8005B40E0 /* scmemos.c in Sources */ = {isa = PBXBuildFile; fileRef = 5563A53F2720C6E8005B40E0 /* scmemos.c */; };
-		5563A5412720C728005B40E0 /* scrunner.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6A05FF0DE8007FC823 /* scrunner.c */; };
-		5563A5452720CA55005B40E0 /* sclocale.c in Sources */ = {isa = PBXBuildFile; fileRef = 5563A5442720CA55005B40E0 /* sclocale.c */; };
 		5563A5472720CAD3005B40E0 /* glkstart.h in Headers */ = {isa = PBXBuildFile; fileRef = 5563A5462720CAD3005B40E0 /* glkstart.h */; };
-		5563A5482720CAE9005B40E0 /* os_glk.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6005FF0DE8007FC823 /* os_glk.c */; };
+		55E30A5B2724CCD100C2B519 /* GlkClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A462724CC7400C2B519 /* GlkClient.framework */; };
+		55E30A5C2724CCD100C2B519 /* GlkClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A462724CC7400C2B519 /* GlkClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55E30A5D2724CCD100C2B519 /* GlkView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A442724CC7400C2B519 /* GlkView.framework */; };
+		55E30A5E2724CCD100C2B519 /* GlkView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A442724CC7400C2B519 /* GlkView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55E30A6B2724CD1500C2B519 /* scmemos.c in Sources */ = {isa = PBXBuildFile; fileRef = 5563A53F2720C6E8005B40E0 /* scmemos.c */; };
+		55E30A6C2724CD1500C2B519 /* sctasks.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5805FF0DE8007FC823 /* sctasks.c */; };
+		55E30A6D2724CD1500C2B519 /* scinterf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5B05FF0DE8007FC823 /* scinterf.c */; };
+		55E30A6E2724CD1500C2B519 /* scutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5C05FF0DE8007FC823 /* scutils.c */; };
+		55E30A6F2724CD1500C2B519 /* os_glk.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6005FF0DE8007FC823 /* os_glk.c */; };
+		55E30A702724CD1500C2B519 /* sctaffil.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7A05FF0DE8007FC823 /* sctaffil.c */; };
+		55E30A712724CD1500C2B519 /* scevents.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5705FF0DE8007FC823 /* scevents.c */; };
+		55E30A722724CD1500C2B519 /* scrunner.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6A05FF0DE8007FC823 /* scrunner.c */; };
+		55E30A732724CD1500C2B519 /* scobjcts.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7005FF0DE8007FC823 /* scobjcts.c */; };
+		55E30A742724CD1500C2B519 /* scparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6105FF0DE8007FC823 /* scparser.c */; };
+		55E30A752724CD1500C2B519 /* scserial.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7605FF0DE8007FC823 /* scserial.c */; };
+		55E30A762724CD1500C2B519 /* scvars.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6505FF0DE8007FC823 /* scvars.c */; };
+		55E30A772724CD1500C2B519 /* scgamest.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5F05FF0DE8007FC823 /* scgamest.c */; };
+		55E30A782724CD1500C2B519 /* scresour.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DF303061CAE2D00EB1701 /* scresour.c */; };
+		55E30A792724CD1500C2B519 /* sclocale.c in Sources */ = {isa = PBXBuildFile; fileRef = 5563A5442720CA55005B40E0 /* sclocale.c */; };
+		55E30A7A2724CD1500C2B519 /* sclibrar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7705FF0DE8007FC823 /* sclibrar.c */; };
+		55E30A7B2724CD1500C2B519 /* scprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7905FF0DE8007FC823 /* scprintf.c */; };
+		55E30A7C2724CD1500C2B519 /* scexpr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5905FF0DE8007FC823 /* scexpr.c */; };
+		55E30A7D2724CD1500C2B519 /* scnpcs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5505FF0DE8007FC823 /* scnpcs.c */; };
+		55E30A7E2724CD1500C2B519 /* sctafpar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F5405FF0DE8007FC823 /* sctafpar.c */; };
+		55E30A7F2724CD1500C2B519 /* scprops.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6C05FF0DE8007FC823 /* scprops.c */; };
+		55E30A802724CD1500C2B519 /* scdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F7C05FF0DE8007FC823 /* scdebug.c */; };
+		55E30A812724CD1500C2B519 /* screstrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D7B8F6605FF0DE8007FC823 /* screstrs.c */; };
+		55E30A832724CE2200C2B519 /* scare-client in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55E30A642724CCF500C2B519 /* scare-client */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55E30A8A2724CEB400C2B519 /* GlkClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A462724CC7400C2B519 /* GlkClient.framework */; };
+		55E30A8B2724CEB400C2B519 /* GlkView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A442724CC7400C2B519 /* GlkView.framework */; };
+		55E30A8C2724CEB400C2B519 /* libglkmain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E30A542724CC7400C2B519 /* libglkmain.a */; };
+		55E30A8F2724D1BE00C2B519 /* ScareWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E30A8E2724D1BE00C2B519 /* ScareWindowController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55E30A412724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = CocoaGlk;
+		};
+		55E30A432724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B51AA4707E8770600576AB9;
+			remoteInfo = GlkView;
+		};
+		55E30A452724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B51AA5607E877C900576AB9;
+			remoteInfo = GlkClient;
+		};
+		55E30A472724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BF0852A0E166E8300DB5C6B;
+			remoteInfo = GlkSound;
+		};
+		55E30A492724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B0459F107EA20F1002D7C88;
+			remoteInfo = multiwin;
+		};
+		55E30A4B2724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B0459F607EA20FE002D7C88;
+			remoteInfo = glulxe;
+		};
+		55E30A4D2724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BBC40F808A7AABD00B790B5;
+			remoteInfo = imagetest;
+		};
+		55E30A4F2724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B3C3B790F3DAB850066A760;
+			remoteInfo = git;
+		};
+		55E30A512724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C6BB36204DED96001AE7E5;
+			remoteInfo = SwiftGlk;
+		};
+		55E30A532724CC7400C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 552CEF1127152BDA009D87A5;
+			remoteInfo = glkmain;
+		};
+		55E30A552724CCC100C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B51AA5507E877C900576AB9;
+			remoteInfo = GlkClient;
+		};
+		55E30A572724CCC100C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B51AA4607E8770600576AB9;
+			remoteInfo = GlkView;
+		};
+		55E30A592724CCC100C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 552CEF1027152BDA009D87A5;
+			remoteInfo = glkmain;
+		};
+		55E30A842724CE2600C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E30A632724CCF500C2B519;
+			remoteInfo = "scare-client";
+		};
+		55E30A862724CE4F00C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B51AA5507E877C900576AB9;
+			remoteInfo = GlkClient;
+		};
+		55E30A882724CE5C00C2B519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B51AA4607E8770600576AB9;
+			remoteInfo = GlkView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55E30A5F2724CCD100C2B519 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55E30A5E2724CCD100C2B519 /* GlkView.framework in Embed Frameworks */,
+				55E30A5C2724CCD100C2B519 /* GlkClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E30A822724CE1400C2B519 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				55E30A832724CE2200C2B519 /* scare-client in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -124,8 +241,6 @@
 		3DEC126E089ED4A200C32BA6 /* MacScare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacScare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF75D320602FFF90056AA39 /* NSBundle+Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Types.h"; sourceTree = "<group>"; };
 		3DF75D330602FFF90056AA39 /* NSBundle+Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Types.m"; sourceTree = "<group>"; };
-		4B26D91E049D1EA500A8E303 /* GlkFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkFileStream.h; sourceTree = "<group>"; };
-		4B26D91F049D1EA500A8E303 /* GlkFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkFileStream.m; sourceTree = "<group>"; };
 		4B3B960304A370AD00A8E303 /* GlkTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkTextContainer.h; sourceTree = "<group>"; };
 		4B3B960404A370AD00A8E303 /* GlkTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkTextContainer.m; sourceTree = "<group>"; };
 		4B40A2C304A09B9E00A8E303 /* GlkImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkImage.h; sourceTree = "<group>"; };
@@ -135,43 +250,22 @@
 		4B5AECA3049CF5EA00A8E303 /* GlkTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkTextView.h; sourceTree = "<group>"; };
 		4B5AECA4049CF5EA00A8E303 /* GlkTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkTextView.m; sourceTree = "<group>"; };
 		4B74AB860497A82D00A8E303 /* glk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = glk.h; sourceTree = "<group>"; };
-		4B74ABDD0497AAD100A8E303 /* GlkSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkSession.h; sourceTree = "<group>"; };
-		4B74ABDE0497AAD100A8E303 /* GlkSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkSession.m; sourceTree = "<group>"; };
-		4B74ABE10497AFF800A8E303 /* GlkWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindow.h; sourceTree = "<group>"; };
-		4B74ABE20497AFF800A8E303 /* GlkWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindow.m; sourceTree = "<group>"; };
-		4B74ABE50497B92B00A8E303 /* GlkStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkStream.h; sourceTree = "<group>"; };
-		4B74ABE60497B92B00A8E303 /* GlkStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkStream.m; sourceTree = "<group>"; };
-		4B74ABE90497BDF800A8E303 /* GlkFileRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkFileRef.h; sourceTree = "<group>"; };
-		4B74ABEA0497BDF800A8E303 /* GlkFileRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkFileRef.m; sourceTree = "<group>"; };
 		4B74ABEE0497CA8100A8E303 /* GlkWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowView.h; sourceTree = "<group>"; };
 		4B74ABEF0497CA8100A8E303 /* GlkWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowView.m; sourceTree = "<group>"; };
 		4B74ABF20497F70900A8E303 /* GlkAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkAppDelegate.h; sourceTree = "<group>"; };
 		4B74ABF30497F70900A8E303 /* GlkAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkAppDelegate.m; sourceTree = "<group>"; };
-		4B74AC0F0498D4A700A8E303 /* GlkWindowStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWindowStream.h; sourceTree = "<group>"; };
-		4B74AC100498D4A700A8E303 /* GlkWindowStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWindowStream.m; sourceTree = "<group>"; };
 		4B74AC130498D9DF00A8E303 /* GlkTextBufferView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkTextBufferView.h; sourceTree = "<group>"; };
 		4B74AC140498D9DF00A8E303 /* GlkTextBufferView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkTextBufferView.m; sourceTree = "<group>"; };
 		4BB67C50049F778E00A8E303 /* GlkGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkGraphicsView.h; sourceTree = "<group>"; };
 		4BB67C51049F778E00A8E303 /* GlkGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkGraphicsView.m; sourceTree = "<group>"; };
-		4BBD9E08049E254900A8E303 /* GlkMemoryStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkMemoryStream.h; sourceTree = "<group>"; };
-		4BBD9E09049E254900A8E303 /* GlkMemoryStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkMemoryStream.m; sourceTree = "<group>"; };
-		4BBD9E0C049E2A8900A8E303 /* memorystreamtest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memorystreamtest.c; sourceTree = "<group>"; };
 		4BBD9E24049E465C00A8E303 /* gi_dispa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gi_dispa.m; sourceTree = "<group>"; };
 		4BBD9E27049E51CE00A8E303 /* gi_blorb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gi_blorb.m; sourceTree = "<group>"; };
-		4BBD9E3A049E6D8600A8E303 /* GlkWriteBufferedStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkWriteBufferedStream.h; sourceTree = "<group>"; };
-		4BBD9E3B049E6D8600A8E303 /* GlkWriteBufferedStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkWriteBufferedStream.m; sourceTree = "<group>"; };
-		4BDBA7ED049B5A5100A8E303 /* GlkEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkEvent.h; sourceTree = "<group>"; };
-		4BDBA7EE049B5A5100A8E303 /* GlkEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkEvent.m; sourceTree = "<group>"; };
 		4BDBA80D049B7B5100A8E303 /* gi_blorb.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = gi_blorb.c; sourceTree = "<group>"; };
 		4BDBA80E049B7B5100A8E303 /* gi_blorb.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = gi_blorb.h; sourceTree = "<group>"; };
 		4BDBA811049B7BD900A8E303 /* gi_dispa.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = gi_dispa.c; sourceTree = "<group>"; };
 		4BDBA812049B7BD900A8E303 /* gi_dispa.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = gi_dispa.h; sourceTree = "<group>"; };
 		4BDBA815049B7CEF00A8E303 /* glk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glk.m; sourceTree = "<group>"; };
-		4BDBA818049B821800A8E303 /* model.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = model.c; sourceTree = "<group>"; };
-		4BDBA81D049B97D100A8E303 /* GlkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlkStatus.h; sourceTree = "<group>"; };
-		4BDBA81E049B97D100A8E303 /* GlkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlkStatus.m; sourceTree = "<group>"; };
 		4BDBA821049B980000A8E303 /* glkInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkInternal.h; sourceTree = "<group>"; };
-		4BDBA825049BA43900A8E303 /* multiwin.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = multiwin.c; sourceTree = "<group>"; };
 		5563A5352720B951005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		5563A5362720B951005B40E0 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5563A5392720B9C0005B40E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -179,6 +273,10 @@
 		5563A53F2720C6E8005B40E0 /* scmemos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scmemos.c; sourceTree = "<group>"; };
 		5563A5442720CA55005B40E0 /* sclocale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sclocale.c; sourceTree = "<group>"; };
 		5563A5462720CAD3005B40E0 /* glkstart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkstart.h; sourceTree = "<group>"; };
+		55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaGlk.xcodeproj; path = CocoaGlk/CocoaGlk.xcodeproj; sourceTree = "<group>"; };
+		55E30A642724CCF500C2B519 /* scare-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "scare-client"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E30A8D2724D1BE00C2B519 /* ScareWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScareWindowController.h; sourceTree = "<group>"; };
+		55E30A8E2724D1BE00C2B519 /* ScareWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScareWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +284,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E30A5B2724CCD100C2B519 /* GlkClient.framework in Frameworks */,
+				55E30A5D2724CCD100C2B519 /* GlkView.framework in Frameworks */,
 				3DEC1268089ED4A100C32BA6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E30A612724CCF500C2B519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E30A8A2724CEB400C2B519 /* GlkClient.framework in Frameworks */,
+				55E30A8B2724CEB400C2B519 /* GlkView.framework in Frameworks */,
+				55E30A8C2724CEB400C2B519 /* libglkmain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +306,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4BDBA81C049B97C400A8E303 /* Misc */,
-				4B74AB880497A85300A8E303 /* Glk */,
 				4B74ABED0497C7AA00A8E303 /* Interface */,
 			);
 			name = Classes;
@@ -224,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				3DEC126E089ED4A200C32BA6 /* MacScare.app */,
+				55E30A642724CCF500C2B519 /* scare-client */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,6 +340,7 @@
 		29B97314FDCFA39411CA2CEA /* CocoaGlk */ = {
 			isa = PBXGroup;
 			children = (
+				55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */,
 				3D0A26F705DE8008003E9430 /* Scare */,
 				4B74AB850497A81500A8E303 /* C_source */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -326,30 +436,15 @@
 				4BDBA811049B7BD900A8E303 /* gi_dispa.c */,
 				4BBD9E24049E465C00A8E303 /* gi_dispa.m */,
 				4BDBA80C049B7B4100A8E303 /* Blorb */,
-				4BDBA817049B81ED00A8E303 /* Test */,
 			);
 			name = C_source;
-			sourceTree = "<group>";
-		};
-		4B74AB880497A85300A8E303 /* Glk */ = {
-			isa = PBXGroup;
-			children = (
-				4B74ABDD0497AAD100A8E303 /* GlkSession.h */,
-				4B74ABDE0497AAD100A8E303 /* GlkSession.m */,
-				4BDBA7ED049B5A5100A8E303 /* GlkEvent.h */,
-				4BDBA7EE049B5A5100A8E303 /* GlkEvent.m */,
-				4B74ABE10497AFF800A8E303 /* GlkWindow.h */,
-				4B74ABE20497AFF800A8E303 /* GlkWindow.m */,
-				4B74AC0E0498D48500A8E303 /* Streams */,
-				4B74ABE90497BDF800A8E303 /* GlkFileRef.h */,
-				4B74ABEA0497BDF800A8E303 /* GlkFileRef.m */,
-			);
-			name = Glk;
 			sourceTree = "<group>";
 		};
 		4B74ABED0497C7AA00A8E303 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				55E30A8D2724D1BE00C2B519 /* ScareWindowController.h */,
+				55E30A8E2724D1BE00C2B519 /* ScareWindowController.m */,
 				4B74ABEE0497CA8100A8E303 /* GlkWindowView.h */,
 				4B74ABEF0497CA8100A8E303 /* GlkWindowView.m */,
 				4B5AEC97049CB50500A8E303 /* TextGrid */,
@@ -361,23 +456,6 @@
 				3DF75D330602FFF90056AA39 /* NSBundle+Types.m */,
 			);
 			name = Interface;
-			sourceTree = "<group>";
-		};
-		4B74AC0E0498D48500A8E303 /* Streams */ = {
-			isa = PBXGroup;
-			children = (
-				4B74ABE50497B92B00A8E303 /* GlkStream.h */,
-				4B74ABE60497B92B00A8E303 /* GlkStream.m */,
-				4B74AC0F0498D4A700A8E303 /* GlkWindowStream.h */,
-				4B74AC100498D4A700A8E303 /* GlkWindowStream.m */,
-				4BBD9E3A049E6D8600A8E303 /* GlkWriteBufferedStream.h */,
-				4BBD9E3B049E6D8600A8E303 /* GlkWriteBufferedStream.m */,
-				4B26D91E049D1EA500A8E303 /* GlkFileStream.h */,
-				4B26D91F049D1EA500A8E303 /* GlkFileStream.m */,
-				4BBD9E08049E254900A8E303 /* GlkMemoryStream.h */,
-				4BBD9E09049E254900A8E303 /* GlkMemoryStream.m */,
-			);
-			name = Streams;
 			sourceTree = "<group>";
 		};
 		4B74AC170498DE4000A8E303 /* TextBuffer */ = {
@@ -414,23 +492,21 @@
 			name = Blorb;
 			sourceTree = "<group>";
 		};
-		4BDBA817049B81ED00A8E303 /* Test */ = {
+		55E30A352724CC7400C2B519 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BDBA818049B821800A8E303 /* model.c */,
-				4BDBA825049BA43900A8E303 /* multiwin.c */,
-				4BBD9E0C049E2A8900A8E303 /* memorystreamtest.c */,
+				55E30A422724CC7400C2B519 /* CocoaGlk.app */,
+				55E30A442724CC7400C2B519 /* GlkView.framework */,
+				55E30A462724CC7400C2B519 /* GlkClient.framework */,
+				55E30A482724CC7400C2B519 /* GlkSound.framework */,
+				55E30A4A2724CC7400C2B519 /* multiwin */,
+				55E30A4C2724CC7400C2B519 /* glulxe-client */,
+				55E30A4E2724CC7400C2B519 /* imagetest */,
+				55E30A502724CC7400C2B519 /* git-client */,
+				55E30A522724CC7400C2B519 /* SwiftGlk.app */,
+				55E30A542724CC7400C2B519 /* libglkmain.a */,
 			);
-			name = Test;
-			sourceTree = "<group>";
-		};
-		4BDBA81C049B97C400A8E303 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				4BDBA81D049B97D100A8E303 /* GlkStatus.h */,
-				4BDBA81E049B97D100A8E303 /* GlkStatus.m */,
-			);
-			name = Misc;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,25 +517,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEC1204089ED4A100C32BA6 /* CocoaGlk_Prefix.h in Headers */,
-				3DEC1205089ED4A100C32BA6 /* GlkSession.h in Headers */,
-				3DEC1206089ED4A100C32BA6 /* GlkWindow.h in Headers */,
-				3DEC1207089ED4A100C32BA6 /* GlkStream.h in Headers */,
-				3DEC1208089ED4A100C32BA6 /* GlkFileRef.h in Headers */,
 				3DEC1209089ED4A100C32BA6 /* GlkWindowView.h in Headers */,
 				3DEC120A089ED4A100C32BA6 /* GlkAppDelegate.h in Headers */,
-				3DEC120B089ED4A100C32BA6 /* GlkWindowStream.h in Headers */,
 				3DEC120C089ED4A100C32BA6 /* GlkTextBufferView.h in Headers */,
-				3DEC120D089ED4A100C32BA6 /* GlkEvent.h in Headers */,
 				3DEC120E089ED4A100C32BA6 /* glk.h in Headers */,
-				3DEC120F089ED4A100C32BA6 /* GlkStatus.h in Headers */,
 				3DEC1210089ED4A100C32BA6 /* glkInternal.h in Headers */,
 				3DEC1211089ED4A100C32BA6 /* GlkTextGridView.h in Headers */,
 				3DEC1212089ED4A100C32BA6 /* GlkTextView.h in Headers */,
-				3DEC1213089ED4A100C32BA6 /* GlkFileStream.h in Headers */,
-				3DEC1214089ED4A100C32BA6 /* GlkMemoryStream.h in Headers */,
 				3DEC1215089ED4A100C32BA6 /* gi_dispa.h in Headers */,
 				3DEC1216089ED4A100C32BA6 /* gi_blorb.h in Headers */,
-				3DEC1217089ED4A100C32BA6 /* GlkWriteBufferedStream.h in Headers */,
 				3DEC1218089ED4A100C32BA6 /* GlkGraphicsView.h in Headers */,
 				3DEC1219089ED4A100C32BA6 /* GlkImage.h in Headers */,
 				3DEC121A089ED4A100C32BA6 /* GlkTextContainer.h in Headers */,
@@ -499,16 +565,40 @@
 				3DEC1229089ED4A100C32BA6 /* Resources */,
 				3DEC122F089ED4A100C32BA6 /* Sources */,
 				3DEC1267089ED4A100C32BA6 /* Frameworks */,
+				55E30A5F2724CCD100C2B519 /* Embed Frameworks */,
+				55E30A822724CE1400C2B519 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55E30A852724CE2600C2B519 /* PBXTargetDependency */,
+				55E30A562724CCC100C2B519 /* PBXTargetDependency */,
+				55E30A582724CCC100C2B519 /* PBXTargetDependency */,
+				55E30A5A2724CCC100C2B519 /* PBXTargetDependency */,
 			);
 			name = MacScare;
 			productInstallPath = "$(HOME)/Applications";
 			productName = CocoaGlk;
 			productReference = 3DEC126E089ED4A200C32BA6 /* MacScare.app */;
 			productType = "com.apple.product-type.application";
+		};
+		55E30A632724CCF500C2B519 /* scare-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E30A682724CCF500C2B519 /* Build configuration list for PBXNativeTarget "scare-client" */;
+			buildPhases = (
+				55E30A602724CCF500C2B519 /* Sources */,
+				55E30A612724CCF500C2B519 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E30A892724CE5C00C2B519 /* PBXTargetDependency */,
+				55E30A872724CE4F00C2B519 /* PBXTargetDependency */,
+			);
+			name = "scare-client";
+			productName = "scare-client";
+			productReference = 55E30A642724CCF500C2B519 /* scare-client */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -517,6 +607,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					55E30A632724CCF500C2B519 = {
+						CreatedOnToolsVersion = 13.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 3DEC11F4089EB50700C32BA6 /* Build configuration list for PBXProject "MacScare" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -528,13 +624,93 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CocoaGlk */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55E30A352724CC7400C2B519 /* Products */;
+					ProjectRef = 55E30A342724CC7400C2B519 /* CocoaGlk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3DEC1202089ED4A100C32BA6 /* MacScare */,
 				3DFE639E060AF64500977C98 /* ScareCLI */,
+				55E30A632724CCF500C2B519 /* scare-client */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55E30A422724CC7400C2B519 /* CocoaGlk.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CocoaGlk.app;
+			remoteRef = 55E30A412724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A442724CC7400C2B519 /* GlkView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlkView.framework;
+			remoteRef = 55E30A432724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A462724CC7400C2B519 /* GlkClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlkClient.framework;
+			remoteRef = 55E30A452724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A482724CC7400C2B519 /* GlkSound.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlkSound.framework;
+			remoteRef = 55E30A472724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A4A2724CC7400C2B519 /* multiwin */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = multiwin;
+			remoteRef = 55E30A492724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A4C2724CC7400C2B519 /* glulxe-client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "glulxe-client";
+			remoteRef = 55E30A4B2724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A4E2724CC7400C2B519 /* imagetest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = imagetest;
+			remoteRef = 55E30A4D2724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A502724CC7400C2B519 /* git-client */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "git-client";
+			remoteRef = 55E30A4F2724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A522724CC7400C2B519 /* SwiftGlk.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftGlk.app;
+			remoteRef = 55E30A512724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55E30A542724CC7400C2B519 /* libglkmain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglkmain.a;
+			remoteRef = 55E30A532724CC7400C2B519 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DEC1229089ED4A100C32BA6 /* Resources */ = {
@@ -556,57 +732,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEC1230089ED4A100C32BA6 /* main.m in Sources */,
-				3DEC1231089ED4A100C32BA6 /* GlkSession.m in Sources */,
-				3DEC1232089ED4A100C32BA6 /* GlkWindow.m in Sources */,
-				3DEC1233089ED4A100C32BA6 /* GlkStream.m in Sources */,
-				3DEC1234089ED4A100C32BA6 /* GlkFileRef.m in Sources */,
-				3DEC1235089ED4A100C32BA6 /* GlkWindowView.m in Sources */,
 				3DEC1236089ED4A100C32BA6 /* GlkAppDelegate.m in Sources */,
-				3DEC1237089ED4A100C32BA6 /* GlkWindowStream.m in Sources */,
-				3DEC1238089ED4A100C32BA6 /* GlkTextBufferView.m in Sources */,
-				3DEC1239089ED4A100C32BA6 /* GlkEvent.m in Sources */,
-				3DEC123A089ED4A100C32BA6 /* glk.m in Sources */,
-				5563A5402720C6E8005B40E0 /* scmemos.c in Sources */,
-				3DEC123B089ED4A100C32BA6 /* GlkStatus.m in Sources */,
-				3DEC123C089ED4A100C32BA6 /* GlkTextGridView.m in Sources */,
-				3DEC123D089ED4A100C32BA6 /* GlkTextView.m in Sources */,
-				3DEC123E089ED4A100C32BA6 /* GlkFileStream.m in Sources */,
-				3DEC123F089ED4A100C32BA6 /* GlkMemoryStream.m in Sources */,
-				5563A5452720CA55005B40E0 /* sclocale.c in Sources */,
-				3DEC1240089ED4A100C32BA6 /* gi_dispa.c in Sources */,
-				3DEC1241089ED4A100C32BA6 /* gi_blorb.c in Sources */,
-				3DEC1242089ED4A100C32BA6 /* gi_dispa.m in Sources */,
-				3DEC1243089ED4A100C32BA6 /* gi_blorb.m in Sources */,
-				3DEC1244089ED4A100C32BA6 /* GlkWriteBufferedStream.m in Sources */,
-				3DEC1245089ED4A100C32BA6 /* GlkGraphicsView.m in Sources */,
-				5563A5482720CAE9005B40E0 /* os_glk.c in Sources */,
-				3DEC1246089ED4A100C32BA6 /* GlkImage.m in Sources */,
-				3DEC1247089ED4A100C32BA6 /* GlkTextContainer.m in Sources */,
-				3DEC1248089ED4A100C32BA6 /* sctafpar.c in Sources */,
-				3DEC1249089ED4A100C32BA6 /* scnpcs.c in Sources */,
-				3DEC124A089ED4A100C32BA6 /* scevents.c in Sources */,
-				3DEC124B089ED4A100C32BA6 /* sctasks.c in Sources */,
-				3DEC124C089ED4A100C32BA6 /* scexpr.c in Sources */,
-				3DEC124D089ED4A100C32BA6 /* scinterf.c in Sources */,
-				3DEC124E089ED4A100C32BA6 /* scutils.c in Sources */,
-				3DEC124F089ED4A100C32BA6 /* scgamest.c in Sources */,
-				3DEC1251089ED4A100C32BA6 /* scparser.c in Sources */,
-				3DEC1253089ED4A100C32BA6 /* scvars.c in Sources */,
-				3DEC1254089ED4A100C32BA6 /* screstrs.c in Sources */,
-				5563A5412720C728005B40E0 /* scrunner.c in Sources */,
-				3DEC1258089ED4A100C32BA6 /* scprops.c in Sources */,
-				3DEC125A089ED4A100C32BA6 /* scobjcts.c in Sources */,
-				3DEC1260089ED4A100C32BA6 /* scserial.c in Sources */,
-				3DEC1261089ED4A100C32BA6 /* sclibrar.c in Sources */,
-				3DEC1262089ED4A100C32BA6 /* scprintf.c in Sources */,
-				3DEC1263089ED4A100C32BA6 /* sctaffil.c in Sources */,
-				3DEC1264089ED4A100C32BA6 /* scdebug.c in Sources */,
+				55E30A8F2724D1BE00C2B519 /* ScareWindowController.m in Sources */,
 				3DEC1265089ED4A100C32BA6 /* NSBundle+Types.m in Sources */,
-				3DEC1266089ED4A100C32BA6 /* scresour.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E30A602724CCF500C2B519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E30A742724CD1500C2B519 /* scparser.c in Sources */,
+				55E30A792724CD1500C2B519 /* sclocale.c in Sources */,
+				55E30A6F2724CD1500C2B519 /* os_glk.c in Sources */,
+				55E30A762724CD1500C2B519 /* scvars.c in Sources */,
+				55E30A6D2724CD1500C2B519 /* scinterf.c in Sources */,
+				55E30A702724CD1500C2B519 /* sctaffil.c in Sources */,
+				55E30A802724CD1500C2B519 /* scdebug.c in Sources */,
+				55E30A752724CD1500C2B519 /* scserial.c in Sources */,
+				55E30A7A2724CD1500C2B519 /* sclibrar.c in Sources */,
+				55E30A6E2724CD1500C2B519 /* scutils.c in Sources */,
+				55E30A772724CD1500C2B519 /* scgamest.c in Sources */,
+				55E30A6C2724CD1500C2B519 /* sctasks.c in Sources */,
+				55E30A732724CD1500C2B519 /* scobjcts.c in Sources */,
+				55E30A782724CD1500C2B519 /* scresour.c in Sources */,
+				55E30A722724CD1500C2B519 /* scrunner.c in Sources */,
+				55E30A7C2724CD1500C2B519 /* scexpr.c in Sources */,
+				55E30A7F2724CD1500C2B519 /* scprops.c in Sources */,
+				55E30A712724CD1500C2B519 /* scevents.c in Sources */,
+				55E30A7B2724CD1500C2B519 /* scprintf.c in Sources */,
+				55E30A812724CD1500C2B519 /* screstrs.c in Sources */,
+				55E30A6B2724CD1500C2B519 /* scmemos.c in Sources */,
+				55E30A7E2724CD1500C2B519 /* sctafpar.c in Sources */,
+				55E30A7D2724CD1500C2B519 /* scnpcs.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55E30A562724CCC100C2B519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlkClient;
+			targetProxy = 55E30A552724CCC100C2B519 /* PBXContainerItemProxy */;
+		};
+		55E30A582724CCC100C2B519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlkView;
+			targetProxy = 55E30A572724CCC100C2B519 /* PBXContainerItemProxy */;
+		};
+		55E30A5A2724CCC100C2B519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = glkmain;
+			targetProxy = 55E30A592724CCC100C2B519 /* PBXContainerItemProxy */;
+		};
+		55E30A852724CE2600C2B519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E30A632724CCF500C2B519 /* scare-client */;
+			targetProxy = 55E30A842724CE2600C2B519 /* PBXContainerItemProxy */;
+		};
+		55E30A872724CE4F00C2B519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlkClient;
+			targetProxy = 55E30A862724CE4F00C2B519 /* PBXContainerItemProxy */;
+		};
+		55E30A892724CE5C00C2B519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlkView;
+			targetProxy = 55E30A882724CE5C00C2B519 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -688,13 +883,14 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				SDKROOT = macosx;
@@ -736,7 +932,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
@@ -757,6 +953,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
 				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
@@ -780,11 +977,69 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "__unix=1";
 				INFOPLIST_FILE = "Info-MacScare.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ulikusterer.macscare;
 				PRODUCT_NAME = MacScare;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		55E30A692724CCF500C2B519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__unix=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55E30A6A2724CCF500C2B519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__unix=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -814,6 +1069,15 @@
 			buildConfigurations = (
 				3DEC126A089ED4A100C32BA6 /* Debug */,
 				3DEC126B089ED4A100C32BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E30A682724CCF500C2B519 /* Build configuration list for PBXNativeTarget "scare-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E30A692724CCF500C2B519 /* Debug */,
+				55E30A6A2724CCF500C2B519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
